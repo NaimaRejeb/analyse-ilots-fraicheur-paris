@@ -6,8 +6,8 @@ project:
 
 website:
   title: "Ilots de Fraicheur a Paris - Analyse R"
-  site-url: "https://naimarejebb.github.io/paris-ilots-fraicheur/"
-  repo-url: "https://github.com/naimarejebb/paris-ilots-fraicheur"
+  site-url: "https://naimarejebb.github.io/analyse-ilots-fraicheur-paris-/"
+  repo-url: "https://github.com/naimarejebb/analyse-ilots-fraicheur-paris-"
   
   repo-actions: [edit, issue]
   sidebar:
