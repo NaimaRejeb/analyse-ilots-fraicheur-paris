@@ -1,0 +1,152 @@
+---
+title: "Analyse Statistique"
+subtitle: "Statistiques descriptives et analyses avancées"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-fold: true
+    embed-resources: false
+---
+
+# 📈 Statistiques Descriptives
+
+## Chargement des données
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+# URL du dataset Open Data Paris
+url <- "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/ilots-de-fraicheur-equipements-activites/exports/csv"
+
+# Import des données
+donnees <- read.csv2(url, encoding = "UTF-8", stringsAsFactors = FALSE)
+
+# Aperçu
+cat("Nombre total d'îlots de fraîcheur:", nrow(donnees), "\n")
+cat("Nombre de variables:", ncol(donnees), "\n")
+```
+
+## Répartition par type d'équipement
+
+```{r echo=TRUE}
+# Calculer les statistiques
+type_table <- table(donnees$type)
+type_df <- data.frame(
+  Type = names(type_table),
+  Nombre = as.numeric(type_table),
+  Pourcentage = round(as.numeric(type_table) / sum(type_table) * 100, 1)
+)
+type_df <- type_df[order(-type_df$Nombre), ]
+
+# Afficher le tableau
+print(type_df)
+```
+
+### Visualisation
+
+```{r echo=TRUE, fig.height=6, fig.width=10}
+# Graphique en barres
+par(mar = c(5, 12, 4, 2))
+barplot(head(type_df$Nombre, 10), 
+        names.arg = head(type_df$Type, 10),
+        horiz = TRUE, 
+        las = 1,
+        col = rainbow(10),
+        main = "Top 10 des types d'équipements",
+        xlab = "Nombre d'équipements")
+```
+
+## Répartition par arrondissement
+
+```{r echo=TRUE}
+# Statistiques par arrondissement
+arrd_table <- table(donnees$arrondissement)
+arrd_df <- data.frame(
+  Arrondissement = names(arrd_table),
+  Nombre = as.numeric(arrd_table),
+  Pourcentage = round(as.numeric(arrd_table) / sum(arrd_table) * 100, 1)
+)
+arrd_df <- arrd_df[order(-arrd_df$Nombre), ]
+
+# Afficher le top 10
+print(head(arrd_df, 10))
+```
+
+### Visualisation
+
+```{r echo=TRUE, fig.height=7, fig.width=10}
+arrd_sorted <- sort(table(donnees$arrondissement))
+
+par(mar = c(5, 5, 4, 2))
+barplot(arrd_sorted, 
+        main = "Nombre d'îlots de fraîcheur par arrondissement",
+        xlab = "Arrondissement",
+        ylab = "Nombre d'îlots",
+        col = "steelblue",
+        las = 2)
+```
+
+## Accessibilité
+
+```{r echo=TRUE}
+# Statistiques d'accessibilité
+payant_table <- table(donnees$payant)
+payant_df <- data.frame(
+  Acces = names(payant_table),
+  Nombre = as.numeric(payant_table),
+  Pourcentage = round(as.numeric(payant_table) / sum(payant_table) * 100, 1)
+)
+
+print(payant_df)
+```
+
+### Graphique
+
+```{r echo=TRUE, fig.height=6, fig.width=8}
+# Camembert
+pie(payant_table, 
+    main = "Accessibilité des îlots de fraîcheur",
+    col = c("gray80", "#2ecc71", "#e74c3c"),
+    labels = paste(names(payant_table), "\n", 
+                   round(payant_table/sum(payant_table)*100, 1), "%"))
+```
+
+# 🔍 Analyses Avancées
+
+## Analyse croisée
+
+```{r echo=TRUE}
+# Top 8 types
+top8_types <- head(names(sort(table(donnees$type), decreasing = TRUE)), 8)
+donnees_top8 <- donnees[donnees$type %in% top8_types, ]
+
+# Tableau croisé
+table_croisee <- table(donnees_top8$type, donnees_top8$payant)
+print(table_croisee)
+```
+
+## Résumé statistique
+
+```{r echo=TRUE}
+resume <- data.frame(
+  Indicateur = c(
+    "Nombre total",
+    "Types différents",
+    "Type principal",
+    "Arrondissement top",
+    "Taux gratuit"
+  ),
+  Valeur = c(
+    nrow(donnees),
+    length(unique(donnees$type[donnees$type != ""])),
+    names(sort(table(donnees$type), decreasing = TRUE))[1],
+    names(sort(table(donnees$arrondissement), decreasing = TRUE))[1],
+    paste0(round(sum(donnees$payant == "Non", na.rm = TRUE) / nrow(donnees) * 100, 1), "%")
+  )
+)
+
+print(resume)
+```
+
+---
+
+**Conclusion** : Paris dispose de 548 îlots de fraîcheur avec plus de 80% d'accès gratuit.

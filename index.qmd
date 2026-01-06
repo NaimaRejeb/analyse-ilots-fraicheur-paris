@@ -1,0 +1,57 @@
+---
+title: "Analyse des Îlots de Fraîcheur à Paris"
+subtitle: "Projet R - Data Science & AI G1"
+author: "Naima Rejeb"
+date: "`r Sys.Date()`"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    embed-resources: false
+---
+
+# 🌳 Introduction
+
+Ce projet analyse les **îlots de fraîcheur** disponibles dans la ville de Paris à partir des données ouvertes de la Ville de Paris. L'objectif est de comprendre la répartition géographique et typologique de ces espaces essentiels face au changement climatique.
+
+## 📊 Contexte
+
+Les îlots de fraîcheur sont des lieux permettant aux citadins de se rafraîchir pendant les périodes de forte chaleur. Cette étude examine :
+
+- La **distribution spatiale** des îlots à Paris
+- Les **types d'équipements** disponibles
+- L'**accessibilité** (gratuit vs payant)
+- La **répartition par arrondissement**
+
+## 🎯 Objectifs
+
+1. Cartographier les îlots de fraîcheur
+2. Analyser leur répartition par arrondissement
+3. Identifier les types d'équipements les plus fréquents
+4. Évaluer l'accessibilité pour les citoyens
+
+## 📁 Source des données
+
+Les données proviennent de l'[Open Data Paris](https://opendata.paris.fr) et incluent :
+
+- **548 îlots de fraîcheur** recensés
+- **Coordonnées GPS** de chaque équipement
+- **Informations** sur le type, l'accès et les horaires
+
+---
+
+::: {.callout-note}
+## Navigation
+
+- **[Analyse →](analyse.qmd)** : Statistiques descriptives détaillées
+- **[Visualisations →](visualisations.qmd)** : Cartes et graphiques interactifs
+:::
+
+## 🚀 Technologies utilisées
+
+- **R** : Langage de programmation statistique
+- **Quarto** : Publication scientifique et web
+- **Plotrix & RColorBrewer** : Visualisations avancées
+- **GitHub Pages** : Hébergement web gratuit
