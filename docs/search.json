@@ -4,223 +4,230 @@
     "href": "visualisations.html",
     "title": "Visualisations Avancées",
     "section": "",
-    "text": "Cette carte montre la localisation de tous les îlots de fraîcheur à Paris, colorés selon leur type.\n\n\n\nCarte des îlots de fraîcheur à Paris\n\n\n\n\n\n\n\n\nNote\n\n\n\nChaque point représente un îlot de fraîcheur. Les couleurs indiquent le type d’équipement.\n\n\n\n\n\nLa carte de densité révèle les zones de concentration des îlots de fraîcheur dans la capitale.\n\n\n\nCarte de densité\n\n\n\n\n\n\n\n\nTip\n\n\n\nLes zones rouges indiquent une forte concentration d’îlots, tandis que les zones bleues sont moins équipées."
+    "text": "Cette carte montre la localisation de tous les îlots de fraîcheur à Paris, colorés selon leur type.\n\n\n\nCarte des îlots de fraîcheur à Paris\n\n\n\n\n\n\n\n\nNote\n\n\n\nChaque point représente un îlot de fraîcheur. Les couleurs indiquent le type d’équipement.\n\n\n\n\n\nLa carte de densité révèle les zones de concentration des îlots de fraîcheur dans la capitale.\n\n\n\nCarte de densité\n\n\n\n\n\n\n\n\nTip\n\n\n\nLes zones rouges indiquent une forte concentration d’îlots, tandis que les zones bleues sont moins équipées.",
+    "crumbs": [
+      "Analyses",
+      "Visualisations Avancées"
+    ]
   },
   {
     "objectID": "visualisations.html#carte-des-îlots-de-fraîcheur",
     "href": "visualisations.html#carte-des-îlots-de-fraîcheur",
     "title": "Visualisations Avancées",
     "section": "",
-    "text": "Cette carte montre la localisation de tous les îlots de fraîcheur à Paris, colorés selon leur type.\n\n\n\nCarte des îlots de fraîcheur à Paris\n\n\n\n\n\n\n\n\nNote\n\n\n\nChaque point représente un îlot de fraîcheur. Les couleurs indiquent le type d’équipement."
+    "text": "Cette carte montre la localisation de tous les îlots de fraîcheur à Paris, colorés selon leur type.\n\n\n\nCarte des îlots de fraîcheur à Paris\n\n\n\n\n\n\n\n\nNote\n\n\n\nChaque point représente un îlot de fraîcheur. Les couleurs indiquent le type d’équipement.",
+    "crumbs": [
+      "Analyses",
+      "Visualisations Avancées"
+    ]
   },
   {
     "objectID": "visualisations.html#carte-de-densité",
     "href": "visualisations.html#carte-de-densité",
     "title": "Visualisations Avancées",
     "section": "",
-    "text": "La carte de densité révèle les zones de concentration des îlots de fraîcheur dans la capitale.\n\n\n\nCarte de densité\n\n\n\n\n\n\n\n\nTip\n\n\n\nLes zones rouges indiquent une forte concentration d’îlots, tandis que les zones bleues sont moins équipées."
+    "text": "La carte de densité révèle les zones de concentration des îlots de fraîcheur dans la capitale.\n\n\n\nCarte de densité\n\n\n\n\n\n\n\n\nTip\n\n\n\nLes zones rouges indiquent une forte concentration d’îlots, tandis que les zones bleues sont moins équipées.",
+    "crumbs": [
+      "Analyses",
+      "Visualisations Avancées"
+    ]
   },
   {
     "objectID": "visualisations.html#pyramide-des-arrondissements",
     "href": "visualisations.html#pyramide-des-arrondissements",
     "title": "Visualisations Avancées",
-    "section": "Pyramide des arrondissements",
-    "text": "Pyramide des arrondissements\n\n\n\nPyramide comparative des arrondissements"
+    "section": "2.1 Pyramide des arrondissements",
+    "text": "2.1 Pyramide des arrondissements\n\n\n\nPyramide comparative des arrondissements",
+    "crumbs": [
+      "Analyses",
+      "Visualisations Avancées"
+    ]
   },
   {
     "objectID": "visualisations.html#graphique-radar",
     "href": "visualisations.html#graphique-radar",
     "title": "Visualisations Avancées",
-    "section": "Graphique radar",
-    "text": "Graphique radar\nLe graphique radar permet de visualiser la distribution des 8 types d’équipements les plus fréquents.\n\n\n\nGraphique radar des types d’équipements"
+    "section": "2.2 Graphique radar",
+    "text": "2.2 Graphique radar\nLe graphique radar permet de visualiser la distribution des 8 types d’équipements les plus fréquents.\n\n\n\nGraphique radar des types d’équipements",
+    "crumbs": [
+      "Analyses",
+      "Visualisations Avancées"
+    ]
   },
   {
     "objectID": "visualisations.html#camembert-3d",
     "href": "visualisations.html#camembert-3d",
     "title": "Visualisations Avancées",
-    "section": "Camembert 3D",
-    "text": "Camembert 3D\n\n\n\nTop 10 des types d’équipements en 3D"
+    "section": "2.3 Camembert 3D",
+    "text": "2.3 Camembert 3D\n\n\n\nTop 10 des types d’équipements en 3D",
+    "crumbs": [
+      "Analyses",
+      "Visualisations Avancées"
+    ]
   },
   {
     "objectID": "visualisations.html#analyse-à-bulles",
     "href": "visualisations.html#analyse-à-bulles",
     "title": "Visualisations Avancées",
-    "section": "Analyse à bulles",
-    "text": "Analyse à bulles\nCe graphique à bulles montre l’analyse croisée entre les arrondissements et les types d’équipements.\n\n\n\nGraphique à bulles : Arrondissement × Type\n\n\n\n\n\n\n\n\nNote\n\n\n\nLa taille des bulles est proportionnelle au nombre d’équipements. Les couleurs indiquent l’intensité."
+    "section": "2.4 Analyse à bulles",
+    "text": "2.4 Analyse à bulles\nCe graphique à bulles montre l’analyse croisée entre les arrondissements et les types d’équipements.\n\n\n\nGraphique à bulles : Arrondissement × Type\n\n\n\n\n\n\n\n\nNote\n\n\n\nLa taille des bulles est proportionnelle au nombre d’équipements. Les couleurs indiquent l’intensité.",
+    "crumbs": [
+      "Analyses",
+      "Visualisations Avancées"
+    ]
   },
   {
     "objectID": "visualisations.html#histogramme-empilé",
     "href": "visualisations.html#histogramme-empilé",
     "title": "Visualisations Avancées",
-    "section": "Histogramme empilé",
-    "text": "Histogramme empilé\n\n\n\nAccessibilité par type d’équipement"
+    "section": "2.5 Histogramme empilé",
+    "text": "2.5 Histogramme empilé\n\n\n\nAccessibilité par type d’équipement",
+    "crumbs": [
+      "Analyses",
+      "Visualisations Avancées"
+    ]
   },
   {
     "objectID": "visualisations.html#diagramme-de-cleveland",
     "href": "visualisations.html#diagramme-de-cleveland",
     "title": "Visualisations Avancées",
-    "section": "Diagramme de Cleveland",
-    "text": "Diagramme de Cleveland\n\n\n\nComparaison des arrondissements (Cleveland)"
-  },
-  {
-    "objectID": "DEPLOIEMENT.html",
-    "href": "DEPLOIEMENT.html",
-    "title": "",
-    "section": "",
-    "text": "Code"
-  },
-  {
-    "objectID": "DEPLOIEMENT.html#étapes-pour-publier-votre-site-web",
-    "href": "DEPLOIEMENT.html#étapes-pour-publier-votre-site-web",
-    "title": "",
-    "section": "Étapes pour publier votre site web",
-    "text": "Étapes pour publier votre site web\n\n1. Initialiser Git\ngit init\ngit add .\ngit commit -m \"Premier commit - Site Quarto îlots de fraîcheur\"\n\n\n2. Créer un repository sur GitHub\n\nAllez sur github.com\nCliquez sur “New repository” (+)\nNom du repository : ilots-fraicheur-paris\nDescription : Analyse des îlots de fraîcheur à Paris\nChoisissez Public\nNe cochez PAS “Initialize with README” (vous en avez déjà un)\nCliquez sur “Create repository”\n\n\n\n3. Lier votre projet au repository GitHub\n# Remplacez VOTRE_USERNAME par votre nom d'utilisateur GitHub\ngit remote add origin https://github.com/VOTRE_USERNAME/ilots-fraicheur-paris.git\ngit branch -M main\ngit push -u origin main\n\n\n4. Activer GitHub Pages\n\nSur GitHub, allez dans votre repository\nCliquez sur Settings (⚙️)\nDans le menu de gauche, cliquez sur Pages\nSous Source, sélectionnez :\n\nBranch: main\nFolder: /docs\n\nCliquez sur Save\n\n\n\n5. Attendre le déploiement\n\nGitHub va construire votre site (2-3 minutes)\nVotre site sera disponible à :\nhttps://VOTRE_USERNAME.github.io/ilots-fraicheur-paris/\n\n\n\n6. Vérifier le déploiement\n\nRafraîchissez la page Settings &gt; Pages\nVous verrez un message vert avec l’URL de votre site"
-  },
-  {
-    "objectID": "DEPLOIEMENT.html#mettre-à-jour-votre-site",
-    "href": "DEPLOIEMENT.html#mettre-à-jour-votre-site",
-    "title": "",
-    "section": "📝 Mettre à jour votre site",
-    "text": "📝 Mettre à jour votre site\nChaque fois que vous modifiez vos fichiers :\n# 1. Régénérer le site\nquarto render\n\n# 2. Commiter les changements\ngit add .\ngit commit -m \"Mise à jour de l'analyse\"\n\n# 3. Pousser sur GitHub\ngit push\nGitHub Pages mettra automatiquement à jour votre site !"
-  },
-  {
-    "objectID": "DEPLOIEMENT.html#résolution-de-problèmes",
-    "href": "DEPLOIEMENT.html#résolution-de-problèmes",
-    "title": "",
-    "section": "⚠️ Résolution de problèmes",
-    "text": "⚠️ Résolution de problèmes\n\nLe site ne s’affiche pas\n\nVérifiez que le dossier /docs contient des fichiers HTML\nAssurez-vous que .nojekyll existe dans le dossier /docs\nAttendez 5 minutes après le premier push\n\n\n\nErreur 404\n\nVérifiez l’URL : https://USERNAME.github.io/NOM-REPO/\nAllez dans Settings &gt; Pages et vérifiez la configuration\n\n\n\nLes images ne s’affichent pas\n\nVérifiez que le dossier outputs/ est bien dans /docs\nLes chemins dans visualisations.qmd doivent être relatifs"
-  },
-  {
-    "objectID": "DEPLOIEMENT.html#personnalisation",
-    "href": "DEPLOIEMENT.html#personnalisation",
-    "title": "",
-    "section": "🎨 Personnalisation",
-    "text": "🎨 Personnalisation\n\nChanger le thème\nÉditez _quarto.yml :\nformat:\n  html:\n    theme: flatly  # Autres: cosmo, united, journal, etc.\n\n\nModifier les couleurs\nÉditez styles.css :\n:root {\n  --primary-color: #votrecouleur;\n}"
-  },
-  {
-    "objectID": "DEPLOIEMENT.html#ressources",
-    "href": "DEPLOIEMENT.html#ressources",
-    "title": "",
-    "section": "📚 Ressources",
-    "text": "📚 Ressources\n\nDocumentation Quarto\nGuide GitHub Pages\nThèmes Quarto\n\n\nBon déploiement ! 🚀"
+    "section": "2.6 Diagramme de Cleveland",
+    "text": "2.6 Diagramme de Cleveland\n\n\n\nComparaison des arrondissements (Cleveland)",
+    "crumbs": [
+      "Analyses",
+      "Visualisations Avancées"
+    ]
   },
   {
     "objectID": "analyse.html",
     "href": "analyse.html",
     "title": "Analyse Statistique",
     "section": "",
-    "text": "Code\n# URL du dataset Open Data Paris\nurl &lt;- \"https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/ilots-de-fraicheur-equipements-activites/exports/csv\"\n\n# Import des données\ndonnees &lt;- read.csv2(url, encoding = \"UTF-8\", stringsAsFactors = FALSE)\n\n# Aperçu\ncat(\"Nombre total d'îlots de fraîcheur:\", nrow(donnees), \"\\n\")\n\n\nNombre total d'îlots de fraîcheur: 548 \n\n\nCode\ncat(\"Nombre de variables:\", ncol(donnees), \"\\n\")\n\n\nNombre de variables: 19 \n\n\n\n\n\n\n\nCode\n# Calculer les statistiques\ntype_table &lt;- table(donnees$type)\ntype_df &lt;- data.frame(\n  Type = names(type_table),\n  Nombre = as.numeric(type_table),\n  Pourcentage = round(as.numeric(type_table) / sum(type_table) * 100, 1)\n)\ntype_df &lt;- type_df[order(-type_df$Nombre), ]\n\n# Afficher le tableau\nprint(type_df)\n\n\n                       Type Nombre Pourcentage\n10         Ombrière pérenne    127        23.2\n7            Lieux de culte    125        22.8\n5               Brumisateur     98        17.9\n9                     Musée     65        11.9\n12                  Piscine     37         6.8\n8   Mairie d'arrondissement     19         3.5\n3             Bains-douches     17         3.1\n4              Bibliothèque     17         3.1\n13        Terrain de boules     14         2.6\n2       Baignade extérieure     12         2.2\n11      Ombrière temporaire     12         2.2\n6  Découverte et Initiation      4         0.7\n1                                1         0.2\n\n\n\n\n\n\nCode\n# Graphique en barres\npar(mar = c(5, 12, 4, 2))\nbarplot(head(type_df$Nombre, 10), \n        names.arg = head(type_df$Type, 10),\n        horiz = TRUE, \n        las = 1,\n        col = rainbow(10),\n        main = \"Top 10 des types d'équipements\",\n        xlab = \"Nombre d'équipements\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Statistiques par arrondissement\narrd_table &lt;- table(donnees$arrondissement)\narrd_df &lt;- data.frame(\n  Arrondissement = names(arrd_table),\n  Nombre = as.numeric(arrd_table),\n  Pourcentage = round(as.numeric(arrd_table) / sum(arrd_table) * 100, 1)\n)\narrd_df &lt;- arrd_df[order(-arrd_df$Nombre), ]\n\n# Afficher le top 10\nprint(head(arrd_df, 10))\n\n\n   Arrondissement Nombre Pourcentage\n20          75020     49         8.9\n12          75012     48         8.8\n19          75019     47         8.6\n18          75018     45         8.2\n15          75015     39         7.1\n16          75016     34         6.2\n14          75014     32         5.8\n13          75013     30         5.5\n7           75007     28         5.1\n17          75017     27         4.9\n\n\n\n\n\n\nCode\narrd_sorted &lt;- sort(table(donnees$arrondissement))\n\npar(mar = c(5, 5, 4, 2))\nbarplot(arrd_sorted, \n        main = \"Nombre d'îlots de fraîcheur par arrondissement\",\n        xlab = \"Arrondissement\",\n        ylab = \"Nombre d'îlots\",\n        col = \"steelblue\",\n        las = 2)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Statistiques d'accessibilité\npayant_table &lt;- table(donnees$payant)\npayant_df &lt;- data.frame(\n  Acces = names(payant_table),\n  Nombre = as.numeric(payant_table),\n  Pourcentage = round(as.numeric(payant_table) / sum(payant_table) * 100, 1)\n)\n\nprint(payant_df)\n\n\n  Acces Nombre Pourcentage\n1           17         3.1\n2   Non    442        80.7\n3   Oui     89        16.2\n\n\n\n\n\n\nCode\n# Camembert\npie(payant_table, \n    main = \"Accessibilité des îlots de fraîcheur\",\n    col = c(\"gray80\", \"#2ecc71\", \"#e74c3c\"),\n    labels = paste(names(payant_table), \"\\n\", \n                   round(payant_table/sum(payant_table)*100, 1), \"%\"))"
+    "text": "Afficher le code\n# URL du dataset Open Data Paris\nurl &lt;- \"https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/ilots-de-fraicheur-equipements-activites/exports/csv\"\n\n# Import des données\ndonnees &lt;- read.csv2(url, encoding = \"UTF-8\", stringsAsFactors = FALSE)\n\n# Aperçu\ncat(\"Nombre total d'îlots de fraîcheur:\", nrow(donnees), \"\\n\")\n\n\nNombre total d'îlots de fraîcheur: 548 \n\n\nAfficher le code\ncat(\"Nombre de variables:\", ncol(donnees), \"\\n\")\n\n\nNombre de variables: 19 \n\n\n\n\n\n\n\nAfficher le code\n# Calculer les statistiques\ntype_table &lt;- table(donnees$type)\ntype_df &lt;- data.frame(\n  Type = names(type_table),\n  Nombre = as.numeric(type_table),\n  Pourcentage = round(as.numeric(type_table) / sum(type_table) * 100, 1)\n)\ntype_df &lt;- type_df[order(-type_df$Nombre), ]\n\n# Afficher le tableau\nprint(type_df)\n\n\n                       Type Nombre Pourcentage\n10         Ombrière pérenne    127        23.2\n7            Lieux de culte    125        22.8\n5               Brumisateur     98        17.9\n9                     Musée     65        11.9\n12                  Piscine     37         6.8\n8   Mairie d'arrondissement     19         3.5\n3             Bains-douches     17         3.1\n4              Bibliothèque     17         3.1\n13        Terrain de boules     14         2.6\n2       Baignade extérieure     12         2.2\n11      Ombrière temporaire     12         2.2\n6  Découverte et Initiation      4         0.7\n1                                1         0.2\n\n\n\n\n\n\nAfficher le code\n# Graphique en barres\npar(mar = c(5, 12, 4, 2))\nbarplot(head(type_df$Nombre, 10), \n        names.arg = head(type_df$Type, 10),\n        horiz = TRUE, \n        las = 1,\n        col = rainbow(10),\n        main = \"Top 10 des types d'équipements\",\n        xlab = \"Nombre d'équipements\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAfficher le code\n# Statistiques par arrondissement\narrd_table &lt;- table(donnees$arrondissement)\narrd_df &lt;- data.frame(\n  Arrondissement = names(arrd_table),\n  Nombre = as.numeric(arrd_table),\n  Pourcentage = round(as.numeric(arrd_table) / sum(arrd_table) * 100, 1)\n)\narrd_df &lt;- arrd_df[order(-arrd_df$Nombre), ]\n\n# Afficher le top 10\nprint(head(arrd_df, 10))\n\n\n   Arrondissement Nombre Pourcentage\n20          75020     49         8.9\n12          75012     48         8.8\n19          75019     47         8.6\n18          75018     45         8.2\n15          75015     39         7.1\n16          75016     34         6.2\n14          75014     32         5.8\n13          75013     30         5.5\n7           75007     28         5.1\n17          75017     27         4.9\n\n\n\n\n\n\nAfficher le code\narrd_sorted &lt;- sort(table(donnees$arrondissement))\n\npar(mar = c(5, 5, 4, 2))\nbarplot(arrd_sorted, \n        main = \"Nombre d'îlots de fraîcheur par arrondissement\",\n        xlab = \"Arrondissement\",\n        ylab = \"Nombre d'îlots\",\n        col = \"steelblue\",\n        las = 2)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAfficher le code\n# Statistiques d'accessibilité\npayant_table &lt;- table(donnees$payant)\npayant_df &lt;- data.frame(\n  Acces = names(payant_table),\n  Nombre = as.numeric(payant_table),\n  Pourcentage = round(as.numeric(payant_table) / sum(payant_table) * 100, 1)\n)\n\nprint(payant_df)\n\n\n  Acces Nombre Pourcentage\n1           17         3.1\n2   Non    442        80.7\n3   Oui     89        16.2\n\n\n\n\n\n\nAfficher le code\n# Camembert\npie(payant_table, \n    main = \"Accessibilité des îlots de fraîcheur\",\n    col = c(\"gray80\", \"#2ecc71\", \"#e74c3c\"),\n    labels = paste(names(payant_table), \"\\n\", \n                   round(payant_table/sum(payant_table)*100, 1), \"%\"))",
+    "crumbs": [
+      "Analyses",
+      "Analyse Statistique"
+    ]
   },
   {
     "objectID": "analyse.html#chargement-des-données",
     "href": "analyse.html#chargement-des-données",
     "title": "Analyse Statistique",
     "section": "",
-    "text": "Code\n# URL du dataset Open Data Paris\nurl &lt;- \"https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/ilots-de-fraicheur-equipements-activites/exports/csv\"\n\n# Import des données\ndonnees &lt;- read.csv2(url, encoding = \"UTF-8\", stringsAsFactors = FALSE)\n\n# Aperçu\ncat(\"Nombre total d'îlots de fraîcheur:\", nrow(donnees), \"\\n\")\n\n\nNombre total d'îlots de fraîcheur: 548 \n\n\nCode\ncat(\"Nombre de variables:\", ncol(donnees), \"\\n\")\n\n\nNombre de variables: 19"
+    "text": "Afficher le code\n# URL du dataset Open Data Paris\nurl &lt;- \"https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/ilots-de-fraicheur-equipements-activites/exports/csv\"\n\n# Import des données\ndonnees &lt;- read.csv2(url, encoding = \"UTF-8\", stringsAsFactors = FALSE)\n\n# Aperçu\ncat(\"Nombre total d'îlots de fraîcheur:\", nrow(donnees), \"\\n\")\n\n\nNombre total d'îlots de fraîcheur: 548 \n\n\nAfficher le code\ncat(\"Nombre de variables:\", ncol(donnees), \"\\n\")\n\n\nNombre de variables: 19",
+    "crumbs": [
+      "Analyses",
+      "Analyse Statistique"
+    ]
   },
   {
     "objectID": "analyse.html#répartition-par-type-déquipement",
     "href": "analyse.html#répartition-par-type-déquipement",
     "title": "Analyse Statistique",
     "section": "",
-    "text": "Code\n# Calculer les statistiques\ntype_table &lt;- table(donnees$type)\ntype_df &lt;- data.frame(\n  Type = names(type_table),\n  Nombre = as.numeric(type_table),\n  Pourcentage = round(as.numeric(type_table) / sum(type_table) * 100, 1)\n)\ntype_df &lt;- type_df[order(-type_df$Nombre), ]\n\n# Afficher le tableau\nprint(type_df)\n\n\n                       Type Nombre Pourcentage\n10         Ombrière pérenne    127        23.2\n7            Lieux de culte    125        22.8\n5               Brumisateur     98        17.9\n9                     Musée     65        11.9\n12                  Piscine     37         6.8\n8   Mairie d'arrondissement     19         3.5\n3             Bains-douches     17         3.1\n4              Bibliothèque     17         3.1\n13        Terrain de boules     14         2.6\n2       Baignade extérieure     12         2.2\n11      Ombrière temporaire     12         2.2\n6  Découverte et Initiation      4         0.7\n1                                1         0.2\n\n\n\n\n\n\nCode\n# Graphique en barres\npar(mar = c(5, 12, 4, 2))\nbarplot(head(type_df$Nombre, 10), \n        names.arg = head(type_df$Type, 10),\n        horiz = TRUE, \n        las = 1,\n        col = rainbow(10),\n        main = \"Top 10 des types d'équipements\",\n        xlab = \"Nombre d'équipements\")"
+    "text": "Afficher le code\n# Calculer les statistiques\ntype_table &lt;- table(donnees$type)\ntype_df &lt;- data.frame(\n  Type = names(type_table),\n  Nombre = as.numeric(type_table),\n  Pourcentage = round(as.numeric(type_table) / sum(type_table) * 100, 1)\n)\ntype_df &lt;- type_df[order(-type_df$Nombre), ]\n\n# Afficher le tableau\nprint(type_df)\n\n\n                       Type Nombre Pourcentage\n10         Ombrière pérenne    127        23.2\n7            Lieux de culte    125        22.8\n5               Brumisateur     98        17.9\n9                     Musée     65        11.9\n12                  Piscine     37         6.8\n8   Mairie d'arrondissement     19         3.5\n3             Bains-douches     17         3.1\n4              Bibliothèque     17         3.1\n13        Terrain de boules     14         2.6\n2       Baignade extérieure     12         2.2\n11      Ombrière temporaire     12         2.2\n6  Découverte et Initiation      4         0.7\n1                                1         0.2\n\n\n\n\n\n\nAfficher le code\n# Graphique en barres\npar(mar = c(5, 12, 4, 2))\nbarplot(head(type_df$Nombre, 10), \n        names.arg = head(type_df$Type, 10),\n        horiz = TRUE, \n        las = 1,\n        col = rainbow(10),\n        main = \"Top 10 des types d'équipements\",\n        xlab = \"Nombre d'équipements\")",
+    "crumbs": [
+      "Analyses",
+      "Analyse Statistique"
+    ]
   },
   {
     "objectID": "analyse.html#répartition-par-arrondissement",
     "href": "analyse.html#répartition-par-arrondissement",
     "title": "Analyse Statistique",
     "section": "",
-    "text": "Code\n# Statistiques par arrondissement\narrd_table &lt;- table(donnees$arrondissement)\narrd_df &lt;- data.frame(\n  Arrondissement = names(arrd_table),\n  Nombre = as.numeric(arrd_table),\n  Pourcentage = round(as.numeric(arrd_table) / sum(arrd_table) * 100, 1)\n)\narrd_df &lt;- arrd_df[order(-arrd_df$Nombre), ]\n\n# Afficher le top 10\nprint(head(arrd_df, 10))\n\n\n   Arrondissement Nombre Pourcentage\n20          75020     49         8.9\n12          75012     48         8.8\n19          75019     47         8.6\n18          75018     45         8.2\n15          75015     39         7.1\n16          75016     34         6.2\n14          75014     32         5.8\n13          75013     30         5.5\n7           75007     28         5.1\n17          75017     27         4.9\n\n\n\n\n\n\nCode\narrd_sorted &lt;- sort(table(donnees$arrondissement))\n\npar(mar = c(5, 5, 4, 2))\nbarplot(arrd_sorted, \n        main = \"Nombre d'îlots de fraîcheur par arrondissement\",\n        xlab = \"Arrondissement\",\n        ylab = \"Nombre d'îlots\",\n        col = \"steelblue\",\n        las = 2)"
+    "text": "Afficher le code\n# Statistiques par arrondissement\narrd_table &lt;- table(donnees$arrondissement)\narrd_df &lt;- data.frame(\n  Arrondissement = names(arrd_table),\n  Nombre = as.numeric(arrd_table),\n  Pourcentage = round(as.numeric(arrd_table) / sum(arrd_table) * 100, 1)\n)\narrd_df &lt;- arrd_df[order(-arrd_df$Nombre), ]\n\n# Afficher le top 10\nprint(head(arrd_df, 10))\n\n\n   Arrondissement Nombre Pourcentage\n20          75020     49         8.9\n12          75012     48         8.8\n19          75019     47         8.6\n18          75018     45         8.2\n15          75015     39         7.1\n16          75016     34         6.2\n14          75014     32         5.8\n13          75013     30         5.5\n7           75007     28         5.1\n17          75017     27         4.9\n\n\n\n\n\n\nAfficher le code\narrd_sorted &lt;- sort(table(donnees$arrondissement))\n\npar(mar = c(5, 5, 4, 2))\nbarplot(arrd_sorted, \n        main = \"Nombre d'îlots de fraîcheur par arrondissement\",\n        xlab = \"Arrondissement\",\n        ylab = \"Nombre d'îlots\",\n        col = \"steelblue\",\n        las = 2)",
+    "crumbs": [
+      "Analyses",
+      "Analyse Statistique"
+    ]
   },
   {
     "objectID": "analyse.html#accessibilité",
     "href": "analyse.html#accessibilité",
     "title": "Analyse Statistique",
     "section": "",
-    "text": "Code\n# Statistiques d'accessibilité\npayant_table &lt;- table(donnees$payant)\npayant_df &lt;- data.frame(\n  Acces = names(payant_table),\n  Nombre = as.numeric(payant_table),\n  Pourcentage = round(as.numeric(payant_table) / sum(payant_table) * 100, 1)\n)\n\nprint(payant_df)\n\n\n  Acces Nombre Pourcentage\n1           17         3.1\n2   Non    442        80.7\n3   Oui     89        16.2\n\n\n\n\n\n\nCode\n# Camembert\npie(payant_table, \n    main = \"Accessibilité des îlots de fraîcheur\",\n    col = c(\"gray80\", \"#2ecc71\", \"#e74c3c\"),\n    labels = paste(names(payant_table), \"\\n\", \n                   round(payant_table/sum(payant_table)*100, 1), \"%\"))"
+    "text": "Afficher le code\n# Statistiques d'accessibilité\npayant_table &lt;- table(donnees$payant)\npayant_df &lt;- data.frame(\n  Acces = names(payant_table),\n  Nombre = as.numeric(payant_table),\n  Pourcentage = round(as.numeric(payant_table) / sum(payant_table) * 100, 1)\n)\n\nprint(payant_df)\n\n\n  Acces Nombre Pourcentage\n1           17         3.1\n2   Non    442        80.7\n3   Oui     89        16.2\n\n\n\n\n\n\nAfficher le code\n# Camembert\npie(payant_table, \n    main = \"Accessibilité des îlots de fraîcheur\",\n    col = c(\"gray80\", \"#2ecc71\", \"#e74c3c\"),\n    labels = paste(names(payant_table), \"\\n\", \n                   round(payant_table/sum(payant_table)*100, 1), \"%\"))",
+    "crumbs": [
+      "Analyses",
+      "Analyse Statistique"
+    ]
   },
   {
     "objectID": "analyse.html#analyse-croisée",
     "href": "analyse.html#analyse-croisée",
     "title": "Analyse Statistique",
-    "section": "Analyse croisée",
-    "text": "Analyse croisée\n\n\nCode\n# Top 8 types\ntop8_types &lt;- head(names(sort(table(donnees$type), decreasing = TRUE)), 8)\ndonnees_top8 &lt;- donnees[donnees$type %in% top8_types, ]\n\n# Tableau croisé\ntable_croisee &lt;- table(donnees_top8$type, donnees_top8$payant)\nprint(table_croisee)\n\n\n                         \n                              Non Oui\n  Bains-douches             0  17   0\n  Bibliothèque              0  17   0\n  Brumisateur               0  98   0\n  Lieux de culte            4 119   2\n  Mairie d'arrondissement   1  18   0\n  Musée                     7   8  50\n  Ombrière pérenne          0 127   0\n  Piscine                   0   0  37"
+    "section": "2.1 Analyse croisée",
+    "text": "2.1 Analyse croisée\n\n\nAfficher le code\n# Top 8 types\ntop8_types &lt;- head(names(sort(table(donnees$type), decreasing = TRUE)), 8)\ndonnees_top8 &lt;- donnees[donnees$type %in% top8_types, ]\n\n# Tableau croisé\ntable_croisee &lt;- table(donnees_top8$type, donnees_top8$payant)\nprint(table_croisee)\n\n\n                         \n                              Non Oui\n  Bains-douches             0  17   0\n  Bibliothèque              0  17   0\n  Brumisateur               0  98   0\n  Lieux de culte            4 119   2\n  Mairie d'arrondissement   1  18   0\n  Musée                     7   8  50\n  Ombrière pérenne          0 127   0\n  Piscine                   0   0  37",
+    "crumbs": [
+      "Analyses",
+      "Analyse Statistique"
+    ]
   },
   {
     "objectID": "analyse.html#résumé-statistique",
     "href": "analyse.html#résumé-statistique",
     "title": "Analyse Statistique",
-    "section": "Résumé statistique",
-    "text": "Résumé statistique\n\n\nCode\nresume &lt;- data.frame(\n  Indicateur = c(\n    \"Nombre total\",\n    \"Types différents\",\n    \"Type principal\",\n    \"Arrondissement top\",\n    \"Taux gratuit\"\n  ),\n  Valeur = c(\n    nrow(donnees),\n    length(unique(donnees$type[donnees$type != \"\"])),\n    names(sort(table(donnees$type), decreasing = TRUE))[1],\n    names(sort(table(donnees$arrondissement), decreasing = TRUE))[1],\n    paste0(round(sum(donnees$payant == \"Non\", na.rm = TRUE) / nrow(donnees) * 100, 1), \"%\")\n  )\n)\n\nprint(resume)\n\n\n          Indicateur           Valeur\n1       Nombre total              548\n2   Types différents               12\n3     Type principal Ombrière pérenne\n4 Arrondissement top            75020\n5       Taux gratuit            80.7%\n\n\n\nConclusion : Paris dispose de 548 îlots de fraîcheur avec plus de 80% d’accès gratuit."
-  },
-  {
-    "objectID": "CORRECTIONS_ACCENTS.html",
-    "href": "CORRECTIONS_ACCENTS.html",
-    "title": "",
-    "section": "",
-    "text": "Code"
-  },
-  {
-    "objectID": "CORRECTIONS_ACCENTS.html#probleme-resolu",
-    "href": "CORRECTIONS_ACCENTS.html#probleme-resolu",
-    "title": "",
-    "section": "Probleme resolu",
-    "text": "Probleme resolu\nLes graphiques affichaient des caracteres mal encodes comme: - Ã© au lieu de e - Ã® au lieu de i\n- Ã¨ au lieu de e"
-  },
-  {
-    "objectID": "CORRECTIONS_ACCENTS.html#solutions-appliquees",
-    "href": "CORRECTIONS_ACCENTS.html#solutions-appliquees",
-    "title": "",
-    "section": "Solutions appliquees",
-    "text": "Solutions appliquees\n\n1. Scripts R corriges\nFichiers modifies: - scripts/01_analyse_principale.R - scripts/02_analyse_avancee.R\nChangements: Tous les textes dans les graphiques (titres, labels d’axes, legendes) ont ete remplaces:\n# AVANT\nmain = \"Nombre d'îlots de fraîcheur\"\nxlab = \"Nombre d'équipements\"\n\n# APRES\nmain = \"Nombre d'ilots de fraicheur\"\nxlab = \"Nombre d'equipements\"\n\n\n2. Graphiques regeneres\nTous les fichiers PNG ont ete regeneres: - carte_ilots_fraicheur.png - carte_densite.png - pyramide_arrondissements.png - radar_types.png - pie3d_types.png - bubble_arrd_type.png - stacked_payant_type.png - cleveland_arrondissements.png\n\n\n3. Comment regenerer les graphiques\n# Tous les graphiques avances\nRscript scripts/02_analyse_avancee.R\n\n# Analyse de base\nRscript scripts/01_analyse_principale.R"
-  },
-  {
-    "objectID": "CORRECTIONS_ACCENTS.html#verification",
-    "href": "CORRECTIONS_ACCENTS.html#verification",
-    "title": "",
-    "section": "Verification",
-    "text": "Verification\nUn graphique de test a ete cree dans outputs/test_graphique.png.\nTous les graphiques devraient maintenant afficher correctement: - “Nombre d’ilots” au lieu de “Nombre d’Ã®lots” - “equipements” au lieu de “Ã©quipements” - “fraicheur” au lieu de “fraÃ®cheur”"
-  },
-  {
-    "objectID": "CORRECTIONS_ACCENTS.html#pour-le-site-quarto",
-    "href": "CORRECTIONS_ACCENTS.html#pour-le-site-quarto",
-    "title": "",
-    "section": "Pour le site Quarto",
-    "text": "Pour le site Quarto\nLe site web sera egalement regenere avec les textes corriges. Pour mettre a jour le site:\nquarto render\n\nStatus: ✓ RESOLU Date: 5 janvier 2026"
+    "section": "2.2 Résumé statistique",
+    "text": "2.2 Résumé statistique\n\n\nAfficher le code\nresume &lt;- data.frame(\n  Indicateur = c(\n    \"Nombre total\",\n    \"Types différents\",\n    \"Type principal\",\n    \"Arrondissement top\",\n    \"Taux gratuit\"\n  ),\n  Valeur = c(\n    nrow(donnees),\n    length(unique(donnees$type[donnees$type != \"\"])),\n    names(sort(table(donnees$type), decreasing = TRUE))[1],\n    names(sort(table(donnees$arrondissement), decreasing = TRUE))[1],\n    paste0(round(sum(donnees$payant == \"Non\", na.rm = TRUE) / nrow(donnees) * 100, 1), \"%\")\n  )\n)\n\nprint(resume)\n\n\n          Indicateur           Valeur\n1       Nombre total              548\n2   Types différents               12\n3     Type principal Ombrière pérenne\n4 Arrondissement top            75020\n5       Taux gratuit            80.7%\n\n\n\nConclusion : Paris dispose de 548 îlots de fraîcheur avec plus de 80% d’accès gratuit.",
+    "crumbs": [
+      "Analyses",
+      "Analyse Statistique"
+    ]
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Analyse des Îlots de Fraîcheur à Paris",
     "section": "",
-    "text": "Ce projet analyse les îlots de fraîcheur disponibles dans la ville de Paris à partir des données ouvertes de la Ville de Paris. L’objectif est de comprendre la répartition géographique et typologique de ces espaces essentiels face au changement climatique.\n\n\nLes îlots de fraîcheur sont des lieux permettant aux citadins de se rafraîchir pendant les périodes de forte chaleur. Cette étude examine :\n\nLa distribution spatiale des îlots à Paris\nLes types d’équipements disponibles\nL’accessibilité (gratuit vs payant)\nLa répartition par arrondissement\n\n\n\n\n\nCartographier les îlots de fraîcheur\nAnalyser leur répartition par arrondissement\nIdentifier les types d’équipements les plus fréquents\nÉvaluer l’accessibilité pour les citoyens\n\n\n\n\nLes données proviennent de l’Open Data Paris et incluent :\n\n548 îlots de fraîcheur recensés\nCoordonnées GPS de chaque équipement\nInformations sur le type, l’accès et les horaires\n\n\n\n\n\n\n\n\nNoteNavigation\n\n\n\n\nAnalyse → : Statistiques descriptives détaillées\nVisualisations → : Cartes et graphiques interactifs\n\n\n\n\n\n\n\nR : Langage de programmation statistique\nQuarto : Publication scientifique et web\nPlotrix & RColorBrewer : Visualisations avancées\nGitHub Pages : Hébergement web gratuit"
+    "text": "Ce projet analyse les îlots de fraîcheur disponibles dans la ville de Paris à partir des données ouvertes de la Ville de Paris. L’objectif est de comprendre la répartition géographique et typologique de ces espaces essentiels face au changement climatique.\n\n\nLes îlots de fraîcheur sont des lieux permettant aux citadins de se rafraîchir pendant les périodes de forte chaleur. Cette étude examine :\n\nLa distribution spatiale des îlots à Paris\nLes types d’équipements disponibles\nL’accessibilité (gratuit vs payant)\nLa répartition par arrondissement\n\n\n\n\n\nCartographier les îlots de fraîcheur\nAnalyser leur répartition par arrondissement\nIdentifier les types d’équipements les plus fréquents\nÉvaluer l’accessibilité pour les citoyens\n\n\n\n\nLes données proviennent de l’Open Data Paris et incluent :\n\n548 îlots de fraîcheur recensés\nCoordonnées GPS de chaque équipement\nInformations sur le type, l’accès et les horaires\n\n\n\n\n\n\n\n\nNoteNavigation\n\n\n\n\nAnalyse → : Statistiques descriptives détaillées\nVisualisations → : Cartes et graphiques interactifs\n\n\n\n\n\n\n\nR : Langage de programmation statistique\nQuarto : Publication scientifique et web\nPlotrix & RColorBrewer : Visualisations avancées\nGitHub Pages : Hébergement web gratuit",
+    "crumbs": [
+      "Accueil",
+      "Analyse des Îlots de Fraîcheur à Paris"
+    ]
   },
   {
     "objectID": "index.html#contexte",
     "href": "index.html#contexte",
     "title": "Analyse des Îlots de Fraîcheur à Paris",
     "section": "",
-    "text": "Les îlots de fraîcheur sont des lieux permettant aux citadins de se rafraîchir pendant les périodes de forte chaleur. Cette étude examine :\n\nLa distribution spatiale des îlots à Paris\nLes types d’équipements disponibles\nL’accessibilité (gratuit vs payant)\nLa répartition par arrondissement"
+    "text": "Les îlots de fraîcheur sont des lieux permettant aux citadins de se rafraîchir pendant les périodes de forte chaleur. Cette étude examine :\n\nLa distribution spatiale des îlots à Paris\nLes types d’équipements disponibles\nL’accessibilité (gratuit vs payant)\nLa répartition par arrondissement",
+    "crumbs": [
+      "Accueil",
+      "Analyse des Îlots de Fraîcheur à Paris"
+    ]
   },
   {
     "objectID": "index.html#objectifs",
     "href": "index.html#objectifs",
     "title": "Analyse des Îlots de Fraîcheur à Paris",
     "section": "",
-    "text": "Cartographier les îlots de fraîcheur\nAnalyser leur répartition par arrondissement\nIdentifier les types d’équipements les plus fréquents\nÉvaluer l’accessibilité pour les citoyens"
+    "text": "Cartographier les îlots de fraîcheur\nAnalyser leur répartition par arrondissement\nIdentifier les types d’équipements les plus fréquents\nÉvaluer l’accessibilité pour les citoyens",
+    "crumbs": [
+      "Accueil",
+      "Analyse des Îlots de Fraîcheur à Paris"
+    ]
   },
   {
     "objectID": "index.html#source-des-données",
     "href": "index.html#source-des-données",
     "title": "Analyse des Îlots de Fraîcheur à Paris",
     "section": "",
-    "text": "Les données proviennent de l’Open Data Paris et incluent :\n\n548 îlots de fraîcheur recensés\nCoordonnées GPS de chaque équipement\nInformations sur le type, l’accès et les horaires\n\n\n\n\n\n\n\n\nNoteNavigation\n\n\n\n\nAnalyse → : Statistiques descriptives détaillées\nVisualisations → : Cartes et graphiques interactifs"
+    "text": "Les données proviennent de l’Open Data Paris et incluent :\n\n548 îlots de fraîcheur recensés\nCoordonnées GPS de chaque équipement\nInformations sur le type, l’accès et les horaires\n\n\n\n\n\n\n\n\nNoteNavigation\n\n\n\n\nAnalyse → : Statistiques descriptives détaillées\nVisualisations → : Cartes et graphiques interactifs",
+    "crumbs": [
+      "Accueil",
+      "Analyse des Îlots de Fraîcheur à Paris"
+    ]
   },
   {
     "objectID": "index.html#technologies-utilisées",
     "href": "index.html#technologies-utilisées",
     "title": "Analyse des Îlots de Fraîcheur à Paris",
     "section": "",
-    "text": "R : Langage de programmation statistique\nQuarto : Publication scientifique et web\nPlotrix & RColorBrewer : Visualisations avancées\nGitHub Pages : Hébergement web gratuit"
+    "text": "R : Langage de programmation statistique\nQuarto : Publication scientifique et web\nPlotrix & RColorBrewer : Visualisations avancées\nGitHub Pages : Hébergement web gratuit",
+    "crumbs": [
+      "Accueil",
+      "Analyse des Îlots de Fraîcheur à Paris"
+    ]
   }
 ]

@@ -1,26 +1,61 @@
 project:
   type: website
   output-dir: docs
+  render: 
+    - "*.qmd"
 
 website:
-  title: "Îlots de Fraîcheur à Paris"
-  navbar:
-    left:
-      - text: "Accueil"
-        href: index.qmd
-      - text: "Analyse"
-        href: analyse.qmd
-      - text: "Visualisations"
-        href: visualisations.qmd
-    right:
-      - icon: github
-        href: https://github.com
+  title: "Ilots de Fraicheur a Paris - Analyse R"
+  site-url: "https://naimarejebb.github.io/paris-ilots-fraicheur/"
+  repo-url: "https://github.com/naimarejebb/paris-ilots-fraicheur"
+  
+  repo-actions: [edit, issue]
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - section: "Accueil"
+        contents:
+          - index.qmd
+      - section: "Analyses"
+        contents:
+          - analyse.qmd
+          - visualisations.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: light
     css: styles.css
     toc: true
-    toc-depth: 3
+    number-sections: true
     code-fold: true
-    code-tools: true
+    code-summary: "Afficher le code"
+    code-link: true
+    code-overflow: scroll
+  pdf:
+    toc: false
+    number-sections: true
+    colorlinks: true
+    papersize: a4
+    geometry:
+      - top=20mm
+      - left=25mm
+      - bottom=25mm
+
+# Configuration WebR (R seulement)
+webr:
+  packages: ["dplyr", "ggplot2", "readxl", "tidyr", "lubridate", "sf", "leaflet"]
+
+execute:
+  freeze: true
+  cache: false
+  echo: false
+  warning: false
+  message: false
+  engine: r
+
+# DESACTIVER Jupyter
+kernel:
+  jupyter: false
+
+latex-auto-install: true

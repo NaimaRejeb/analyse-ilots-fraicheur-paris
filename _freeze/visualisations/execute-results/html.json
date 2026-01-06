@@ -1,0 +1,15 @@
+{
+  "hash": "d796e140e1cf20ac2fa0ba4fcea31e25",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Visualisations Avancées\"\nsubtitle: \"Cartes géographiques et graphiques interactifs\"\nformat:\n  html:\n    theme: cosmo\n    toc: true\n    code-fold: true\n---\n\n\n\n# 🗺️ Cartes Géographiques\n\n## Carte des îlots de fraîcheur\n\nCette carte montre la localisation de tous les îlots de fraîcheur à Paris, colorés selon leur type.\n\n![Carte des îlots de fraîcheur à Paris](outputs/carte_ilots_fraicheur.png){width=100%}\n\n::: {.callout-note}\nChaque point représente un îlot de fraîcheur. Les couleurs indiquent le type d'équipement.\n:::\n\n## Carte de densité\n\nLa carte de densité révèle les zones de concentration des îlots de fraîcheur dans la capitale.\n\n![Carte de densité](outputs/carte_densite.png){width=100%}\n\n::: {.callout-tip}\nLes zones rouges indiquent une forte concentration d'îlots, tandis que les zones bleues sont moins équipées.\n:::\n\n# 📊 Graphiques Avancés\n\n## Pyramide des arrondissements\n\n![Pyramide comparative des arrondissements](outputs/pyramide_arrondissements.png){width=100%}\n\n## Graphique radar\n\nLe graphique radar permet de visualiser la distribution des 8 types d'équipements les plus fréquents.\n\n![Graphique radar des types d'équipements](outputs/radar_types.png){width=100%}\n\n## Camembert 3D\n\n![Top 10 des types d'équipements en 3D](outputs/pie3d_types.png){width=100%}\n\n## Analyse à bulles\n\nCe graphique à bulles montre l'analyse croisée entre les arrondissements et les types d'équipements.\n\n![Graphique à bulles : Arrondissement × Type](outputs/bubble_arrd_type.png){width=100%}\n\n::: {.callout-note}\nLa taille des bulles est proportionnelle au nombre d'équipements. Les couleurs indiquent l'intensité.\n:::\n\n## Histogramme empilé\n\n![Accessibilité par type d'équipement](outputs/stacked_payant_type.png){width=100%}\n\n## Diagramme de Cleveland\n\n![Comparaison des arrondissements (Cleveland)](outputs/cleveland_arrondissements.png){width=100%}\n\n# 📁 Téléchargements\n\nLes données et résultats sont disponibles au téléchargement :\n\n- [Répartition par types (CSV)](outputs/repartition_types.csv)\n- [Répartition par arrondissements (CSV)](outputs/repartition_arrondissements.csv)\n- [Statistiques d'accès (CSV)](outputs/repartition_acces.csv)\n- [Résumé statistique (CSV)](outputs/resume_statistique.csv)\n\n---\n\n::: {.callout-important}\n## À retenir\n\nLes visualisations révèlent :\n\n1. **Distribution inégale** : Les arrondissements périphériques sont mieux équipés\n2. **Diversité des équipements** : Plus de 10 types différents\n3. **Accessibilité élevée** : Majorité d'accès gratuit\n4. **Concentration spatiale** : Certaines zones ont une forte densité d'îlots\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
