@@ -1,1 +1,1 @@
-Sitemap: https://naimarejebb.github.io/analyse-ilots-fraicheur-paris-/sitemap.xml
+Sitemap: https://NaimaRejeb.github.io/analyse-ilots-fraicheur-paris/sitemap.xml
