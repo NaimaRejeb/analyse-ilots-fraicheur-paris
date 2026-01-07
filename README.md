@@ -8,22 +8,26 @@
 
 ## 📊 Description
 
-Projet d'analyse statistique des **548 îlots de fraîcheur** à Paris, réalisé dans le cadre du cours de **Data Science & AI**.
+Projet d'analyse statistique des **îlots de fraîcheur** à Paris, réalisé dans le cadre du cours de **Data Science & AI**.
 
 ### Objectifs
-- 📍 Cartographier les îlots de fraîcheur
-- 📈 Analyser leur répartition par arrondissement
-- 🏷️ Identifier les types d'équipements les plus fréquents
-- 💰 Évaluer l'accessibilité (gratuit vs payant)
+- 🧹 **Prétraiter** et nettoyer les données brutes
+- 📍 **Cartographier** les îlots de fraîcheur
+- 📈 **Analyser** leur répartition par arrondissement
+- 🏷️ **Identifier** les types d'équipements les plus fréquents
+- 💰 **Évaluer** l'accessibilité (gratuit vs payant)
 
 ## 🎯 Résultats clés
 
 | Indicateur | Valeur |
 |------------|--------|
-| Nombre total d'îlots | **548** |
-| Type le plus fréquent | **Parc ou jardin** |
-| Arrondissement top | **20e** |
-| Accès gratuit | **~80%** |
+| Données brutes | **548 lignes** |
+| Après nettoyage | **520 lignes** |
+| Doublons supprimés | **28** |
+| Types d'équipements | **12 catégories** |
+| Arrondissements couverts | **20** |
+| Équipements gratuits | **80%** |
+| Points GPS valides | **100%** |
 
 ## 🚀 Installation
 
@@ -36,14 +40,30 @@ Projet d'analyse statistique des **548 îlots de fraîcheur** à Paris, réalis�
 install.packages(c("plotrix", "RColorBrewer", "MASS"))
 ```
 
-### Générer le site
+### Exécuter le pipeline complet
+
 ```bash
+# 1. Prétraitement des données
+Rscript scripts/00_pretraitement.R
+
+# 2. Analyses statistiques
+Rscript scripts/01_analyse_principale.R
+Rscript scripts/02_analyse_avancee.R
+
+# 3. Génération des graphiques
+Rscript scripts/regenerer_graphiques.R
+
+# 4. Générer le site Quarto
 quarto render
+
+# 5. Prévisualiser le site
+quarto preview
 ```
 
-### Prévisualiser
+### Exécution rapide (tout en une commande)
+
 ```bash
-quarto preview
+Rscript scripts/00_pretraitement.R; Rscript scripts/regenerer_graphiques.R; quarto render
 ```
 
 ## 📁 Structure du projet
@@ -55,12 +75,42 @@ analyse-ilots-fraicheur-paris/
 ├── 📄 visualisations.qmd     # Cartes et graphiques
 ├── ⚙️ _quarto.yml            # Configuration Quarto
 ├── 🎨 styles.css             # Styles personnalisés
-├── 📚 COMPREHENSION.md       # Guide complet du projet
+├── 📚 README.md              # Documentation du projet
 ├── scripts/
-│   ├── 01_analyse_principale.R
-│   └── 02_analyse_avancee.R
+│   ├── 00_pretraitement.R    # 🆕 Nettoyage et préparation des données
+│   ├── 01_analyse_simple.R   # Analyse de base
+│   ├── 01_analyse_principale.R # Analyse statistique principale
+│   ├── 02_analyse_avancee.R  # Analyses avancées
+│   └── regenerer_graphiques.R # Génération des visualisations
+├── data/
+│   └── donnees_nettoyees.csv # 🆕 Données après prétraitement
 ├── outputs/                  # Graphiques générés (.png, .csv)
-└── docs/                     # Site web généré
+└──🧹 Étapes du prétraitement
+
+| Étape | Description | Résultat |
+|-------|-------------|----------|
+| 1️⃣ Nettoyage texte | Suppression espaces, conversion vides → NA | ✅ |
+| 2️⃣ Doublons | Détection et suppression | 28 supprimés |
+| 3️⃣ Coordonnées GPS | Extraction lat/lon + validation Paris | 520 valides |
+| 4️⃣ Normalisation | Variables catégorielles standardisées | 12 types |
+| 5️⃣ Nouvelles variables | `categorie`, `zone_paris`, `est_payant`... | 8 colonnes |
+
+## 📊 Visualisations générées
+
+| Graphique | Description |
+|-----------|-------------|
+| 🗺️ Carte des îlots | Position GPS de chaque îlot |
+| 🌡️ Carte de densité | Zones de concentration |
+| 📊 Barplots | Répartition par type/arrondissement |
+| 🕸️ Radar | Distribution des types |
+| 🫧 Bulles | Croisement arrondissement × type |
+| 🥧 Camembert 3D | Top 10 des types |
+| 📈 Cleveland | Comparaison arrondissements |
+| 📊 Histogramme empilé | Accessibilité par type>-28 lignes]
+    D --> E[Extraction GPS]
+    E --> F[Normalisation]
+    F --> G[Nouvelles variables]
+    G --> H[Données propres<br/>520 lignes]
 ```
 
 ## 📊 Visualisations générées

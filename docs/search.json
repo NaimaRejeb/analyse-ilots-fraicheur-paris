@@ -99,6 +99,83 @@
     ]
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Analyse des Îlots de Fraîcheur à Paris",
+    "section": "",
+    "text": "Ce projet analyse les îlots de fraîcheur disponibles dans la ville de Paris à partir des données ouvertes de la Ville de Paris. L’objectif est de comprendre la répartition géographique et typologique de ces espaces essentiels face au changement climatique.\n\n\nLes îlots de fraîcheur sont des lieux permettant aux citadins de se rafraîchir pendant les périodes de forte chaleur. Cette étude examine :\n\nLe prétraitement et nettoyage des données brutes\nLa distribution spatiale des îlots à Paris\nLes types d’équipements disponibles\nL’accessibilité (gratuit vs payant)\nLa répartition par arrondissement\n\n\n\n\n\nPrétraiter les données (nettoyage, doublons, validation GPS)\nCartographier les îlots de fraîcheur\nAnalyser leur répartition par arrondissement\nIdentifier les types d’équipements les plus fréquents\nÉvaluer l’accessibilité pour les citoyens\n\n\n\n\nLes données proviennent de l’Open Data Paris :\n\n\n\nIndicateur\nDonnées brutes\nAprès prétraitement\n\n\n\n\nNombre de lignes\n548\n520\n\n\nDoublons supprimés\n-\n28\n\n\nPoints GPS valides\n-\n100%\n\n\nTypes d’équipements\n13\n12\n\n\nArrondissements\n20\n20\n\n\n\n\n\n\n\n\n\n\n\nflowchart LR\n    A[📥 Données brutes&lt;br/&gt;548 lignes] --&gt; B[🧹 Prétraitement]\n    B --&gt; C[🧼 Nettoyage texte]\n    C --&gt; D[🔄 Suppression doublons&lt;br/&gt;-28 lignes]\n    D --&gt; E[🌍 Extraction GPS]\n    E --&gt; F[📊 Normalisation]\n    F --&gt; G[➕ Nouvelles variables]\n    G --&gt; H[✅ Données propres&lt;br/&gt;520 lignes]\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteNavigation\n\n\n\n\nPrétraitement → : Nettoyage et préparation des données\nAnalyse → : Statistiques descriptives détaillées\nVisualisations → : Cartes et graphiques\n\n\n\n\n\n\n\n\n\nOutil\nUsage\n\n\n\n\nR\nLangage de programmation statistique\n\n\nQuarto\nPublication scientifique et web\n\n\nPlotrix & RColorBrewer\nVisualisations avancées\n\n\nGitHub Pages\nHébergement web gratuit\n\n\n\n\n\n\n\n\n\n\n\n\nTipPoints clés\n\n\n\n\n80% des équipements sont gratuits\nLe 20e arrondissement est le mieux équipé\nOmbrières et lieux de culte dominent les types d’équipements\nLes arrondissements périphériques sont mieux dotés que le centre",
+    "crumbs": [
+      "Accueil",
+      "Analyse des Îlots de Fraîcheur à Paris"
+    ]
+  },
+  {
+    "objectID": "index.html#contexte",
+    "href": "index.html#contexte",
+    "title": "Analyse des Îlots de Fraîcheur à Paris",
+    "section": "",
+    "text": "Les îlots de fraîcheur sont des lieux permettant aux citadins de se rafraîchir pendant les périodes de forte chaleur. Cette étude examine :\n\nLe prétraitement et nettoyage des données brutes\nLa distribution spatiale des îlots à Paris\nLes types d’équipements disponibles\nL’accessibilité (gratuit vs payant)\nLa répartition par arrondissement",
+    "crumbs": [
+      "Accueil",
+      "Analyse des Îlots de Fraîcheur à Paris"
+    ]
+  },
+  {
+    "objectID": "index.html#objectifs",
+    "href": "index.html#objectifs",
+    "title": "Analyse des Îlots de Fraîcheur à Paris",
+    "section": "",
+    "text": "Prétraiter les données (nettoyage, doublons, validation GPS)\nCartographier les îlots de fraîcheur\nAnalyser leur répartition par arrondissement\nIdentifier les types d’équipements les plus fréquents\nÉvaluer l’accessibilité pour les citoyens",
+    "crumbs": [
+      "Accueil",
+      "Analyse des Îlots de Fraîcheur à Paris"
+    ]
+  },
+  {
+    "objectID": "index.html#source-des-données",
+    "href": "index.html#source-des-données",
+    "title": "Analyse des Îlots de Fraîcheur à Paris",
+    "section": "",
+    "text": "Les données proviennent de l’Open Data Paris :\n\n\n\nIndicateur\nDonnées brutes\nAprès prétraitement\n\n\n\n\nNombre de lignes\n548\n520\n\n\nDoublons supprimés\n-\n28\n\n\nPoints GPS valides\n-\n100%\n\n\nTypes d’équipements\n13\n12\n\n\nArrondissements\n20\n20",
+    "crumbs": [
+      "Accueil",
+      "Analyse des Îlots de Fraîcheur à Paris"
+    ]
+  },
+  {
+    "objectID": "index.html#pipeline-de-traitement",
+    "href": "index.html#pipeline-de-traitement",
+    "title": "Analyse des Îlots de Fraîcheur à Paris",
+    "section": "",
+    "text": "flowchart LR\n    A[📥 Données brutes&lt;br/&gt;548 lignes] --&gt; B[🧹 Prétraitement]\n    B --&gt; C[🧼 Nettoyage texte]\n    C --&gt; D[🔄 Suppression doublons&lt;br/&gt;-28 lignes]\n    D --&gt; E[🌍 Extraction GPS]\n    E --&gt; F[📊 Normalisation]\n    F --&gt; G[➕ Nouvelles variables]\n    G --&gt; H[✅ Données propres&lt;br/&gt;520 lignes]\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteNavigation\n\n\n\n\nPrétraitement → : Nettoyage et préparation des données\nAnalyse → : Statistiques descriptives détaillées\nVisualisations → : Cartes et graphiques",
+    "crumbs": [
+      "Accueil",
+      "Analyse des Îlots de Fraîcheur à Paris"
+    ]
+  },
+  {
+    "objectID": "index.html#technologies-utilisées",
+    "href": "index.html#technologies-utilisées",
+    "title": "Analyse des Îlots de Fraîcheur à Paris",
+    "section": "",
+    "text": "Outil\nUsage\n\n\n\n\nR\nLangage de programmation statistique\n\n\nQuarto\nPublication scientifique et web\n\n\nPlotrix & RColorBrewer\nVisualisations avancées\n\n\nGitHub Pages\nHébergement web gratuit",
+    "crumbs": [
+      "Accueil",
+      "Analyse des Îlots de Fraîcheur à Paris"
+    ]
+  },
+  {
+    "objectID": "index.html#résumé-des-résultats",
+    "href": "index.html#résumé-des-résultats",
+    "title": "Analyse des Îlots de Fraîcheur à Paris",
+    "section": "",
+    "text": "TipPoints clés\n\n\n\n\n80% des équipements sont gratuits\nLe 20e arrondissement est le mieux équipé\nOmbrières et lieux de culte dominent les types d’équipements\nLes arrondissements périphériques sont mieux dotés que le centre",
+    "crumbs": [
+      "Accueil",
+      "Analyse des Îlots de Fraîcheur à Paris"
+    ]
+  },
+  {
     "objectID": "analyse.html",
     "href": "analyse.html",
     "title": "Analyse Statistique",
@@ -176,58 +253,113 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Analyse des Îlots de Fraîcheur à Paris",
+    "objectID": "pretraitement.html",
+    "href": "pretraitement.html",
+    "title": "Prétraitement des Données",
     "section": "",
-    "text": "Ce projet analyse les îlots de fraîcheur disponibles dans la ville de Paris à partir des données ouvertes de la Ville de Paris. L’objectif est de comprendre la répartition géographique et typologique de ces espaces essentiels face au changement climatique.\n\n\nLes îlots de fraîcheur sont des lieux permettant aux citadins de se rafraîchir pendant les périodes de forte chaleur. Cette étude examine :\n\nLa distribution spatiale des îlots à Paris\nLes types d’équipements disponibles\nL’accessibilité (gratuit vs payant)\nLa répartition par arrondissement\n\n\n\n\n\nCartographier les îlots de fraîcheur\nAnalyser leur répartition par arrondissement\nIdentifier les types d’équipements les plus fréquents\nÉvaluer l’accessibilité pour les citoyens\n\n\n\n\nLes données proviennent de l’Open Data Paris et incluent :\n\n548 îlots de fraîcheur recensés\nCoordonnées GPS de chaque équipement\nInformations sur le type, l’accès et les horaires\n\n\n\n\n\n\n\n\nNoteNavigation\n\n\n\n\nAnalyse → : Statistiques descriptives détaillées\nVisualisations → : Cartes et graphiques interactifs\n\n\n\n\n\n\n\nR : Langage de programmation statistique\nQuarto : Publication scientifique et web\nPlotrix & RColorBrewer : Visualisations avancées\nGitHub Pages : Hébergement web gratuit",
+    "text": "Le prétraitement est une étape cruciale dans tout projet d’analyse de données. Cette page documente les différentes transformations appliquées aux données brutes des îlots de fraîcheur.\n\n\n\n\n\n\nImportantPourquoi prétraiter ?\n\n\n\n\nÉliminer les doublons et données invalides\nStandardiser les formats des variables\nCréer de nouvelles variables utiles pour l’analyse\nGarantir la qualité des résultats",
     "crumbs": [
-      "Accueil",
-      "Analyse des Îlots de Fraîcheur à Paris"
+      "Méthodologie",
+      "Prétraitement des Données"
     ]
   },
   {
-    "objectID": "index.html#contexte",
-    "href": "index.html#contexte",
-    "title": "Analyse des Îlots de Fraîcheur à Paris",
-    "section": "",
-    "text": "Les îlots de fraîcheur sont des lieux permettant aux citadins de se rafraîchir pendant les périodes de forte chaleur. Cette étude examine :\n\nLa distribution spatiale des îlots à Paris\nLes types d’équipements disponibles\nL’accessibilité (gratuit vs payant)\nLa répartition par arrondissement",
+    "objectID": "pretraitement.html#chargement-initial",
+    "href": "pretraitement.html#chargement-initial",
+    "title": "Prétraitement des Données",
+    "section": "2.1 Chargement initial",
+    "text": "2.1 Chargement initial\n\n\nAfficher le code\n# URL du dataset Open Data Paris\nurl &lt;- \"https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/ilots-de-fraicheur-equipements-activites/exports/csv\"\n\n# Import des données brutes\ndonnees_brutes &lt;- read.csv2(url, encoding = \"UTF-8\", stringsAsFactors = FALSE)\n\ncat(\"📊 DONNÉES BRUTES\\n\")\n\n\n&lt;U+0001F4CA&gt; DONNÉES BRUTES\n\n\nAfficher le code\ncat(\"━━━━━━━━━━━━━━━━━\\n\")\n\n\n&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;\n\n\nAfficher le code\ncat(\"Lignes:\", nrow(donnees_brutes), \"\\n\")\n\n\nLignes: 548 \n\n\nAfficher le code\ncat(\"Colonnes:\", ncol(donnees_brutes), \"\\n\")\n\n\nColonnes: 19",
     "crumbs": [
-      "Accueil",
-      "Analyse des Îlots de Fraîcheur à Paris"
+      "Méthodologie",
+      "Prétraitement des Données"
     ]
   },
   {
-    "objectID": "index.html#objectifs",
-    "href": "index.html#objectifs",
-    "title": "Analyse des Îlots de Fraîcheur à Paris",
-    "section": "",
-    "text": "Cartographier les îlots de fraîcheur\nAnalyser leur répartition par arrondissement\nIdentifier les types d’équipements les plus fréquents\nÉvaluer l’accessibilité pour les citoyens",
+    "objectID": "pretraitement.html#aperçu-des-colonnes",
+    "href": "pretraitement.html#aperçu-des-colonnes",
+    "title": "Prétraitement des Données",
+    "section": "2.2 Aperçu des colonnes",
+    "text": "2.2 Aperçu des colonnes\n\n\nAfficher le code\n# Liste des colonnes\ndata.frame(\n  Index = 1:ncol(donnees_brutes),\n  Colonne = names(donnees_brutes),\n  Type = sapply(donnees_brutes, class)\n)\n\n\n                     Index              Colonne      Type\nX.U.FEFF.identifiant     1 X.U.FEFF.identifiant character\nid_dicom                 2             id_dicom character\nnom                      3                  nom character\ntype                     4                 type character\npayant                   5               payant character\nadresse                  6              adresse character\narrondissement           7       arrondissement   integer\nstatut_ouverture         8     statut_ouverture character\nhoraires_periode         9     horaires_periode character\nhoraires_lundi          10       horaires_lundi character\nhoraires_mardi          11       horaires_mardi character\nhoraires_mercredi       12    horaires_mercredi character\nhoraires_jeudi          13       horaires_jeudi character\nhoraires_vendredi       14    horaires_vendredi character\nhoraires_samedi         15      horaires_samedi character\nhoraires_dimanche       16    horaires_dimanche character\ngeo_shape               17            geo_shape character\ngeo_point_2d            18         geo_point_2d character\nproposition_usager      19   proposition_usager character",
     "crumbs": [
-      "Accueil",
-      "Analyse des Îlots de Fraîcheur à Paris"
+      "Méthodologie",
+      "Prétraitement des Données"
     ]
   },
   {
-    "objectID": "index.html#source-des-données",
-    "href": "index.html#source-des-données",
-    "title": "Analyse des Îlots de Fraîcheur à Paris",
-    "section": "",
-    "text": "Les données proviennent de l’Open Data Paris et incluent :\n\n548 îlots de fraîcheur recensés\nCoordonnées GPS de chaque équipement\nInformations sur le type, l’accès et les horaires\n\n\n\n\n\n\n\n\nNoteNavigation\n\n\n\n\nAnalyse → : Statistiques descriptives détaillées\nVisualisations → : Cartes et graphiques interactifs",
+    "objectID": "pretraitement.html#nettoyage-des-chaînes-de-caractères",
+    "href": "pretraitement.html#nettoyage-des-chaînes-de-caractères",
+    "title": "Prétraitement des Données",
+    "section": "4.1 1. Nettoyage des chaînes de caractères",
+    "text": "4.1 1. Nettoyage des chaînes de caractères\n\n\nAfficher le code\ndonnees &lt;- donnees_brutes\n\n# Fonction de nettoyage\nnettoyer_texte &lt;- function(x) {\n  if (!is.character(x)) return(x)\n  x &lt;- trimws(x)                    # Supprimer espaces début/fin\n  x &lt;- gsub(\"\\\\s+\", \" \", x)         # Remplacer espaces multiples\n  x[x == \"\"] &lt;- NA                  # Convertir vides en NA\n  return(x)\n}\n\n# Appliquer aux colonnes texte\ncolonnes_texte &lt;- c(\"nom\", \"type\", \"adresse\", \"arrondissement\", \"payant\")\nfor (col in colonnes_texte) {\n  if (col %in% names(donnees)) {\n    donnees[[col]] &lt;- nettoyer_texte(donnees[[col]])\n  }\n}\n\ncat(\"✅ Chaînes de caractères nettoyées\\n\")\n\n\n&lt;U+2705&gt; Chaînes de caractères nettoyées",
     "crumbs": [
-      "Accueil",
-      "Analyse des Îlots de Fraîcheur à Paris"
+      "Méthodologie",
+      "Prétraitement des Données"
     ]
   },
   {
-    "objectID": "index.html#technologies-utilisées",
-    "href": "index.html#technologies-utilisées",
-    "title": "Analyse des Îlots de Fraîcheur à Paris",
-    "section": "",
-    "text": "R : Langage de programmation statistique\nQuarto : Publication scientifique et web\nPlotrix & RColorBrewer : Visualisations avancées\nGitHub Pages : Hébergement web gratuit",
+    "objectID": "pretraitement.html#suppression-des-doublons",
+    "href": "pretraitement.html#suppression-des-doublons",
+    "title": "Prétraitement des Données",
+    "section": "4.2 2. Suppression des doublons",
+    "text": "4.2 2. Suppression des doublons\n\n\nAfficher le code\n# Créer une clé unique\ndonnees$cle_unique &lt;- paste(donnees$nom, donnees$adresse, donnees$type, sep = \"|\")\n\n# Compter les doublons\nn_avant &lt;- nrow(donnees)\ndoublons &lt;- duplicated(donnees$cle_unique)\nn_doublons &lt;- sum(doublons)\n\n# Supprimer les doublons\ndonnees &lt;- donnees[!doublons, ]\ndonnees$cle_unique &lt;- NULL\n\ncat(\"📋 SUPPRESSION DES DOUBLONS\\n\")\n\n\n&lt;U+0001F4CB&gt; SUPPRESSION DES DOUBLONS\n\n\nAfficher le code\ncat(\"━━━━━━━━━━━━━━━━━━━━━━━━━━━\\n\")\n\n\n&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;\n\n\nAfficher le code\ncat(\"Lignes avant:\", n_avant, \"\\n\")\n\n\nLignes avant: 548 \n\n\nAfficher le code\ncat(\"Doublons détectés:\", n_doublons, \"\\n\")\n\n\nDoublons détectés: 28 \n\n\nAfficher le code\ncat(\"Lignes après:\", nrow(donnees), \"\\n\")\n\n\nLignes après: 520",
     "crumbs": [
-      "Accueil",
-      "Analyse des Îlots de Fraîcheur à Paris"
+      "Méthodologie",
+      "Prétraitement des Données"
+    ]
+  },
+  {
+    "objectID": "pretraitement.html#extraction-des-coordonnées-gps",
+    "href": "pretraitement.html#extraction-des-coordonnées-gps",
+    "title": "Prétraitement des Données",
+    "section": "4.3 3. Extraction des coordonnées GPS",
+    "text": "4.3 3. Extraction des coordonnées GPS\n\n\nAfficher le code\n# Extraire latitude et longitude\nif (\"geo_point_2d\" %in% names(donnees)) {\n  coords &lt;- strsplit(as.character(donnees$geo_point_2d), \",\")\n  donnees$latitude &lt;- as.numeric(sapply(coords, function(x) {\n    if (length(x) &gt;= 1) trimws(x[1]) else NA\n  }))\n  donnees$longitude &lt;- as.numeric(sapply(coords, function(x) {\n    if (length(x) &gt;= 2) trimws(x[2]) else NA\n  }))\n}\n\n# Validation des coordonnées pour Paris\nlat_min &lt;- 48.80; lat_max &lt;- 48.92\nlon_min &lt;- 2.22; lon_max &lt;- 2.47\n\ncoords_invalides &lt;- which(\n  donnees$latitude &lt; lat_min | donnees$latitude &gt; lat_max |\n  donnees$longitude &lt; lon_min | donnees$longitude &gt; lon_max\n)\n\ncat(\"🌍 COORDONNÉES GPS\\n\")\n\n\n&lt;U+0001F30D&gt; COORDONNÉES GPS\n\n\nAfficher le code\ncat(\"━━━━━━━━━━━━━━━━━━\\n\")\n\n\n&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;&lt;U+2501&gt;\n\n\nAfficher le code\ncat(\"Points valides:\", sum(!is.na(donnees$latitude)), \"/\", nrow(donnees), \"\\n\")\n\n\nPoints valides: 520 / 520 \n\n\nAfficher le code\ncat(\"Coordonnées hors Paris:\", length(coords_invalides), \"\\n\")\n\n\nCoordonnées hors Paris: 0",
+    "crumbs": [
+      "Méthodologie",
+      "Prétraitement des Données"
+    ]
+  },
+  {
+    "objectID": "pretraitement.html#variables-catégorielles",
+    "href": "pretraitement.html#variables-catégorielles",
+    "title": "Prétraitement des Données",
+    "section": "5.1 Variables catégorielles",
+    "text": "5.1 Variables catégorielles\n\n\nAfficher le code\n# Normaliser la colonne \"payant\"\ndonnees$payant &lt;- tolower(donnees$payant)\ndonnees$payant &lt;- ifelse(donnees$payant %in% c(\"oui\", \"yes\", \"1\"), \"Oui\",\n                  ifelse(donnees$payant %in% c(\"non\", \"no\", \"0\"), \"Non\", NA))\n\n# Variable binaire\ndonnees$est_payant &lt;- ifelse(donnees$payant == \"Oui\", TRUE, FALSE)\n\n# Extraire le numéro d'arrondissement\ndonnees$num_arrondissement &lt;- as.integer(gsub(\"750\", \"\", donnees$arrondissement))\n\ncat(\"✅ Variables normalisées créées\\n\")\n\n\n&lt;U+2705&gt; Variables normalisées créées",
+    "crumbs": [
+      "Méthodologie",
+      "Prétraitement des Données"
+    ]
+  },
+  {
+    "objectID": "pretraitement.html#zones-géographiques",
+    "href": "pretraitement.html#zones-géographiques",
+    "title": "Prétraitement des Données",
+    "section": "5.2 Zones géographiques",
+    "text": "5.2 Zones géographiques\n\n\nAfficher le code\n# Créer des zones de Paris\ndonnees$zone_paris &lt;- cut(donnees$num_arrondissement,\n                          breaks = c(0, 4, 8, 12, 16, 20),\n                          labels = c(\"Centre (1-4)\", \"Ouest (5-8)\", \n                                    \"Sud (9-12)\", \"Sud-Ouest (13-16)\", \n                                    \"Nord-Est (17-20)\"),\n                          include.lowest = TRUE)\n\ntable(donnees$zone_paris)\n\n\n\n     Centre (1-4)       Ouest (5-8)        Sud (9-12) Sud-Ouest (13-16) \n               60                77                95               130 \n Nord-Est (17-20) \n              158",
+    "crumbs": [
+      "Méthodologie",
+      "Prétraitement des Données"
+    ]
+  },
+  {
+    "objectID": "pretraitement.html#catégorisation-des-types",
+    "href": "pretraitement.html#catégorisation-des-types",
+    "title": "Prétraitement des Données",
+    "section": "5.3 Catégorisation des types",
+    "text": "5.3 Catégorisation des types\n\n\nAfficher le code\n# Fonction de catégorisation\ncategoriser_type &lt;- function(type) {\n  categorie &lt;- rep(\"Autre\", length(type))\n  categorie[grepl(\"piscine|baignade|bain\", type, ignore.case = TRUE)] &lt;- \"Aquatique\"\n  categorie[grepl(\"brumisateur|fontaine\", type, ignore.case = TRUE)] &lt;- \"Rafraîchissement\"\n  categorie[grepl(\"musée|bibliothèque|culte\", type, ignore.case = TRUE)] &lt;- \"Bâtiment climatisé\"\n  categorie[grepl(\"ombrière|ombre\", type, ignore.case = TRUE)] &lt;- \"Ombrage\"\n  categorie[grepl(\"parc|jardin|square|terrain\", type, ignore.case = TRUE)] &lt;- \"Espace vert\"\n  categorie[grepl(\"mairie|découverte\", type, ignore.case = TRUE)] &lt;- \"Service public\"\n  return(categorie)\n}\n\ndonnees$categorie &lt;- categoriser_type(donnees$type)\ntable(donnees$categorie)\n\n\n\n         Aquatique              Autre Bâtiment climatisé        Espace vert \n                66                  1                207                 14 \n           Ombrage   Rafraîchissement     Service public \n               112                 97                 23",
+    "crumbs": [
+      "Méthodologie",
+      "Prétraitement des Données"
+    ]
+  },
+  {
+    "objectID": "pretraitement.html#visualisation-du-résumé",
+    "href": "pretraitement.html#visualisation-du-résumé",
+    "title": "Prétraitement des Données",
+    "section": "6.1 Visualisation du résumé",
+    "text": "6.1 Visualisation du résumé\n\n\nAfficher le code\n# Graphique comparatif avant/après\npar(mar = c(5, 10, 4, 2))\nbarplot(\n  c(nrow(donnees_brutes), nrow(donnees), n_doublons),\n  names.arg = c(\"Données brutes\", \"Après nettoyage\", \"Doublons supprimés\"),\n  horiz = TRUE,\n  col = c(\"#3498db\", \"#2ecc71\", \"#e74c3c\"),\n  main = \"Impact du prétraitement sur les données\",\n  xlab = \"Nombre de lignes\",\n  las = 1\n)",
+    "crumbs": [
+      "Méthodologie",
+      "Prétraitement des Données"
     ]
   }
 ]

@@ -11,17 +11,29 @@ format:
 
 # 📈 Statistiques Descriptives
 
+::: {.callout-note}
+## Données utilisées
+Cette analyse utilise les **données nettoyées** issues du prétraitement (520 lignes après suppression des 28 doublons).
+:::
+
 ## Chargement des données
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE}
-# URL du dataset Open Data Paris
-url <- "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/ilots-de-fraicheur-equipements-activites/exports/csv"
-
-# Import des données
-donnees <- read.csv2(url, encoding = "UTF-8", stringsAsFactors = FALSE)
+# Charger les données nettoyées si disponibles, sinon depuis l'API
+if (file.exists("data/donnees_nettoyees.csv")) {
+  donnees <- read.csv("data/donnees_nettoyees.csv", encoding = "UTF-8", stringsAsFactors = FALSE)
+  cat("✅ Données nettoyées chargées depuis le fichier local\n")
+} else {
+  # URL du dataset Open Data Paris (fallback)
+  url <- "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/ilots-de-fraicheur-equipements-activites/exports/csv"
+  donnees <- read.csv2(url, encoding = "UTF-8", stringsAsFactors = FALSE)
+  cat("⚠️ Données chargées depuis l'API (non prétraitées)\n")
+}
 
 # Aperçu
-cat("Nombre total d'îlots de fraîcheur:", nrow(donnees), "\n")
+cat("\n📊 APERÇU DES DONNÉES\n")
+cat("━━━━━━━━━━━━━━━━━━━━━━\n")
+cat("Nombre d'îlots de fraîcheur:", nrow(donnees), "\n")
 cat("Nombre de variables:", ncol(donnees), "\n")
 ```
 

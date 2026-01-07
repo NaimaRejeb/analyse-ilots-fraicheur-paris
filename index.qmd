@@ -20,6 +20,7 @@ Ce projet analyse les **îlots de fraîcheur** disponibles dans la ville de Pari
 
 Les îlots de fraîcheur sont des lieux permettant aux citadins de se rafraîchir pendant les périodes de forte chaleur. Cette étude examine :
 
+- Le **prétraitement** et nettoyage des données brutes
 - La **distribution spatiale** des îlots à Paris
 - Les **types d'équipements** disponibles
 - L'**accessibilité** (gratuit vs payant)
@@ -27,31 +28,64 @@ Les îlots de fraîcheur sont des lieux permettant aux citadins de se rafraîchi
 
 ## 🎯 Objectifs
 
-1. Cartographier les îlots de fraîcheur
-2. Analyser leur répartition par arrondissement
-3. Identifier les types d'équipements les plus fréquents
-4. Évaluer l'accessibilité pour les citoyens
+1. **Prétraiter** les données (nettoyage, doublons, validation GPS)
+2. **Cartographier** les îlots de fraîcheur
+3. **Analyser** leur répartition par arrondissement
+4. **Identifier** les types d'équipements les plus fréquents
+5. **Évaluer** l'accessibilité pour les citoyens
 
 ## 📁 Source des données
 
-Les données proviennent de l'[Open Data Paris](https://opendata.paris.fr) et incluent :
+Les données proviennent de l'[Open Data Paris](https://opendata.paris.fr) :
 
-- **548 îlots de fraîcheur** recensés
-- **Coordonnées GPS** de chaque équipement
-- **Informations** sur le type, l'accès et les horaires
+| Indicateur | Données brutes | Après prétraitement |
+|------------|----------------|---------------------|
+| Nombre de lignes | 548 | **520** |
+| Doublons supprimés | - | **28** |
+| Points GPS valides | - | **100%** |
+| Types d'équipements | 13 | **12** |
+| Arrondissements | 20 | **20** |
+
+## 🧹 Pipeline de traitement
+
+```{mermaid}
+flowchart LR
+    A[📥 Données brutes<br/>548 lignes] --> B[🧹 Prétraitement]
+    B --> C[🧼 Nettoyage texte]
+    C --> D[🔄 Suppression doublons<br/>-28 lignes]
+    D --> E[🌍 Extraction GPS]
+    E --> F[📊 Normalisation]
+    F --> G[➕ Nouvelles variables]
+    G --> H[✅ Données propres<br/>520 lignes]
+```
 
 ---
 
 ::: {.callout-note}
 ## Navigation
 
+- **[Prétraitement →](pretraitement.qmd)** : Nettoyage et préparation des données
 - **[Analyse →](analyse.qmd)** : Statistiques descriptives détaillées
-- **[Visualisations →](visualisations.qmd)** : Cartes et graphiques interactifs
+- **[Visualisations →](visualisations.qmd)** : Cartes et graphiques
 :::
 
 ## 🚀 Technologies utilisées
 
-- **R** : Langage de programmation statistique
-- **Quarto** : Publication scientifique et web
-- **Plotrix & RColorBrewer** : Visualisations avancées
-- **GitHub Pages** : Hébergement web gratuit
+| Outil | Usage |
+|-------|-------|
+| **R** | Langage de programmation statistique |
+| **Quarto** | Publication scientifique et web |
+| **Plotrix & RColorBrewer** | Visualisations avancées |
+| **GitHub Pages** | Hébergement web gratuit |
+
+## 📈 Résumé des résultats
+
+::: {.callout-tip}
+## Points clés
+
+- **80%** des équipements sont **gratuits**
+- Le **20e arrondissement** est le mieux équipé
+- **Ombrières** et **lieux de culte** dominent les types d'équipements
+- Les arrondissements périphériques sont mieux dotés que le centre
+:::
+

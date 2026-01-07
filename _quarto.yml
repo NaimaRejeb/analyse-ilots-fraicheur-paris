@@ -17,6 +17,9 @@ website:
       - section: "Accueil"
         contents:
           - index.qmd
+      - section: "Méthodologie"
+        contents:
+          - pretraitement.qmd
       - section: "Analyses"
         contents:
           - analyse.qmd

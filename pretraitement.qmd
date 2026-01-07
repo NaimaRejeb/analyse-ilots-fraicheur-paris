@@ -1,0 +1,281 @@
+---
+title: "Prétraitement des Données"
+subtitle: "Nettoyage et préparation des données brutes"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    code-fold: true
+---
+
+# 🧹 Introduction au Prétraitement
+
+Le prétraitement est une étape **cruciale** dans tout projet d'analyse de données. Cette page documente les différentes transformations appliquées aux données brutes des îlots de fraîcheur.
+
+::: {.callout-important}
+## Pourquoi prétraiter ?
+
+- Éliminer les **doublons** et données invalides
+- Standardiser les **formats** des variables
+- Créer de **nouvelles variables** utiles pour l'analyse
+- Garantir la **qualité** des résultats
+:::
+
+# 📥 Données Brutes
+
+## Chargement initial
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+# URL du dataset Open Data Paris
+url <- "https://opendata.paris.fr/api/explore/v2.1/catalog/datasets/ilots-de-fraicheur-equipements-activites/exports/csv"
+
+# Import des données brutes
+donnees_brutes <- read.csv2(url, encoding = "UTF-8", stringsAsFactors = FALSE)
+
+cat("📊 DONNÉES BRUTES\n")
+cat("━━━━━━━━━━━━━━━━━\n")
+cat("Lignes:", nrow(donnees_brutes), "\n")
+cat("Colonnes:", ncol(donnees_brutes), "\n")
+```
+
+## Aperçu des colonnes
+
+```{r echo=TRUE}
+# Liste des colonnes
+data.frame(
+  Index = 1:ncol(donnees_brutes),
+  Colonne = names(donnees_brutes),
+  Type = sapply(donnees_brutes, class)
+)
+```
+
+# 🔍 Analyse des Valeurs Manquantes
+
+```{r echo=TRUE}
+# Analyser les valeurs manquantes
+analyse_na <- data.frame(
+  Colonne = names(donnees_brutes),
+  NA_count = sapply(donnees_brutes, function(x) sum(is.na(x))),
+  Vide_count = sapply(donnees_brutes, function(x) sum(x == "", na.rm = TRUE))
+)
+analyse_na$Pourcentage <- round((analyse_na$NA_count + analyse_na$Vide_count) / nrow(donnees_brutes) * 100, 1)
+analyse_na <- analyse_na[order(-analyse_na$Pourcentage), ]
+
+# Afficher les colonnes avec données manquantes
+print(analyse_na[analyse_na$Pourcentage > 0, ], row.names = FALSE)
+```
+
+::: {.callout-note}
+## Observations
+
+- **statut_ouverture** : 94% de valeurs manquantes → peu exploitable
+- **horaires_*** : ~77% manquantes → information partielle
+- **type** et **payant** : très peu de données manquantes → exploitables
+:::
+
+# 🧼 Étapes de Nettoyage
+
+## 1. Nettoyage des chaînes de caractères
+
+```{r echo=TRUE}
+donnees <- donnees_brutes
+
+# Fonction de nettoyage
+nettoyer_texte <- function(x) {
+  if (!is.character(x)) return(x)
+  x <- trimws(x)                    # Supprimer espaces début/fin
+  x <- gsub("\\s+", " ", x)         # Remplacer espaces multiples
+  x[x == ""] <- NA                  # Convertir vides en NA
+  return(x)
+}
+
+# Appliquer aux colonnes texte
+colonnes_texte <- c("nom", "type", "adresse", "arrondissement", "payant")
+for (col in colonnes_texte) {
+  if (col %in% names(donnees)) {
+    donnees[[col]] <- nettoyer_texte(donnees[[col]])
+  }
+}
+
+cat("✅ Chaînes de caractères nettoyées\n")
+```
+
+## 2. Suppression des doublons
+
+```{r echo=TRUE}
+# Créer une clé unique
+donnees$cle_unique <- paste(donnees$nom, donnees$adresse, donnees$type, sep = "|")
+
+# Compter les doublons
+n_avant <- nrow(donnees)
+doublons <- duplicated(donnees$cle_unique)
+n_doublons <- sum(doublons)
+
+# Supprimer les doublons
+donnees <- donnees[!doublons, ]
+donnees$cle_unique <- NULL
+
+cat("📋 SUPPRESSION DES DOUBLONS\n")
+cat("━━━━━━━━━━━━━━━━━━━━━━━━━━━\n")
+cat("Lignes avant:", n_avant, "\n")
+cat("Doublons détectés:", n_doublons, "\n")
+cat("Lignes après:", nrow(donnees), "\n")
+```
+
+## 3. Extraction des coordonnées GPS
+
+```{r echo=TRUE}
+# Extraire latitude et longitude
+if ("geo_point_2d" %in% names(donnees)) {
+  coords <- strsplit(as.character(donnees$geo_point_2d), ",")
+  donnees$latitude <- as.numeric(sapply(coords, function(x) {
+    if (length(x) >= 1) trimws(x[1]) else NA
+  }))
+  donnees$longitude <- as.numeric(sapply(coords, function(x) {
+    if (length(x) >= 2) trimws(x[2]) else NA
+  }))
+}
+
+# Validation des coordonnées pour Paris
+lat_min <- 48.80; lat_max <- 48.92
+lon_min <- 2.22; lon_max <- 2.47
+
+coords_invalides <- which(
+  donnees$latitude < lat_min | donnees$latitude > lat_max |
+  donnees$longitude < lon_min | donnees$longitude > lon_max
+)
+
+cat("🌍 COORDONNÉES GPS\n")
+cat("━━━━━━━━━━━━━━━━━━\n")
+cat("Points valides:", sum(!is.na(donnees$latitude)), "/", nrow(donnees), "\n")
+cat("Coordonnées hors Paris:", length(coords_invalides), "\n")
+```
+
+# 🔧 Création de Nouvelles Variables
+
+## Variables catégorielles
+
+```{r echo=TRUE}
+# Normaliser la colonne "payant"
+donnees$payant <- tolower(donnees$payant)
+donnees$payant <- ifelse(donnees$payant %in% c("oui", "yes", "1"), "Oui",
+                  ifelse(donnees$payant %in% c("non", "no", "0"), "Non", NA))
+
+# Variable binaire
+donnees$est_payant <- ifelse(donnees$payant == "Oui", TRUE, FALSE)
+
+# Extraire le numéro d'arrondissement
+donnees$num_arrondissement <- as.integer(gsub("750", "", donnees$arrondissement))
+
+cat("✅ Variables normalisées créées\n")
+```
+
+## Zones géographiques
+
+```{r echo=TRUE}
+# Créer des zones de Paris
+donnees$zone_paris <- cut(donnees$num_arrondissement,
+                          breaks = c(0, 4, 8, 12, 16, 20),
+                          labels = c("Centre (1-4)", "Ouest (5-8)", 
+                                    "Sud (9-12)", "Sud-Ouest (13-16)", 
+                                    "Nord-Est (17-20)"),
+                          include.lowest = TRUE)
+
+table(donnees$zone_paris)
+```
+
+## Catégorisation des types
+
+```{r echo=TRUE}
+# Fonction de catégorisation
+categoriser_type <- function(type) {
+  categorie <- rep("Autre", length(type))
+  categorie[grepl("piscine|baignade|bain", type, ignore.case = TRUE)] <- "Aquatique"
+  categorie[grepl("brumisateur|fontaine", type, ignore.case = TRUE)] <- "Rafraîchissement"
+  categorie[grepl("musée|bibliothèque|culte", type, ignore.case = TRUE)] <- "Bâtiment climatisé"
+  categorie[grepl("ombrière|ombre", type, ignore.case = TRUE)] <- "Ombrage"
+  categorie[grepl("parc|jardin|square|terrain", type, ignore.case = TRUE)] <- "Espace vert"
+  categorie[grepl("mairie|découverte", type, ignore.case = TRUE)] <- "Service public"
+  return(categorie)
+}
+
+donnees$categorie <- categoriser_type(donnees$type)
+table(donnees$categorie)
+```
+
+# 📊 Résumé du Prétraitement
+
+```{r echo=TRUE}
+resume <- data.frame(
+  Métrique = c(
+    "Lignes initiales",
+    "Lignes après nettoyage",
+    "Doublons supprimés",
+    "Points GPS valides",
+    "Types d'équipements",
+    "Arrondissements couverts",
+    "Équipements gratuits",
+    "Équipements payants"
+  ),
+  Valeur = c(
+    nrow(donnees_brutes),
+    nrow(donnees),
+    n_doublons,
+    sum(!is.na(donnees$latitude)),
+    length(unique(na.omit(donnees$type))),
+    length(unique(na.omit(donnees$arrondissement))),
+    sum(donnees$payant == "Non", na.rm = TRUE),
+    sum(donnees$payant == "Oui", na.rm = TRUE)
+  )
+)
+
+print(resume)
+```
+
+## Visualisation du résumé
+
+```{r echo=TRUE, fig.height=5, fig.width=8}
+# Graphique comparatif avant/après
+par(mar = c(5, 10, 4, 2))
+barplot(
+  c(nrow(donnees_brutes), nrow(donnees), n_doublons),
+  names.arg = c("Données brutes", "Après nettoyage", "Doublons supprimés"),
+  horiz = TRUE,
+  col = c("#3498db", "#2ecc71", "#e74c3c"),
+  main = "Impact du prétraitement sur les données",
+  xlab = "Nombre de lignes",
+  las = 1
+)
+```
+
+# 📁 Fichiers Générés
+
+Le script de prétraitement génère les fichiers suivants :
+
+| Fichier | Description |
+|---------|-------------|
+| `data/donnees_nettoyees.csv` | Données complètes après nettoyage |
+| `outputs/resume_pretraitement.csv` | Résumé statistique du prétraitement |
+| `outputs/analyse_valeurs_manquantes.csv` | Détail des valeurs manquantes |
+
+::: {.callout-tip}
+## Utilisation des données nettoyées
+
+Pour les analyses suivantes, utilisez le fichier nettoyé :
+
+```r
+donnees <- read.csv("data/donnees_nettoyees.csv", encoding = "UTF-8")
+```
+:::
+
+---
+
+::: {.callout-important}
+## Points clés du prétraitement
+
+1. **28 doublons supprimés** → données plus fiables
+2. **Coordonnées GPS validées** → cartographie précise  
+3. **Variables enrichies** → analyses plus riches
+4. **Données standardisées** → cohérence garantie
+:::
