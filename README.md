@@ -1,102 +1,104 @@
-# 🌳 Îlots de Fraîcheur à Paris
+# 🌳 Analyse des Îlots de Fraîcheur à Paris
 
-[![Quarto](https://img.shields.io/badge/Quarto-Project-blue)](https://quarto.org)
-[![R](https://img.shields.io/badge/R-Language-276DC3)](https://www.r-project.org/)
-[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-green)](https://pages.github.com/)
+[![Quarto](https://img.shields.io/badge/Quarto-Website-blue)](https://quarto.org)
+[![R](https://img.shields.io/badge/R-4.0+-276DC3)](https://www.r-project.org/)
+[![GitHub Pages](https://img.shields.io/badge/Live-Demo-green)](https://naimarejeb.github.io/analyse-ilots-fraicheur-paris/)
 
-Analyse statistique et géographique des îlots de fraîcheur à Paris.
+> 🔗 **Site web** : [https://naimarejeb.github.io/analyse-ilots-fraicheur-paris/](https://naimarejeb.github.io/analyse-ilots-fraicheur-paris/)
 
 ## 📊 Description
 
-Ce projet analyse les **548 îlots de fraîcheur** recensés à Paris à partir des données ouvertes de la Ville de Paris. Il comprend :
+Projet d'analyse statistique des **548 îlots de fraîcheur** à Paris, réalisé dans le cadre du cours de **Data Science & AI**.
 
-- 📈 Statistiques descriptives complètes
-- 🗺️ Cartes géographiques interactives
-- 📊 Visualisations avancées (radar, bulles, 3D)
-- 📄 Exports de données CSV
+### Objectifs
+- 📍 Cartographier les îlots de fraîcheur
+- 📈 Analyser leur répartition par arrondissement
+- 🏷️ Identifier les types d'équipements les plus fréquents
+- 💰 Évaluer l'accessibilité (gratuit vs payant)
 
-## 🚀 Installation et Déploiement
+## 🎯 Résultats clés
+
+| Indicateur | Valeur |
+|------------|--------|
+| Nombre total d'îlots | **548** |
+| Type le plus fréquent | **Parc ou jardin** |
+| Arrondissement top | **20e** |
+| Accès gratuit | **~80%** |
+
+## 🚀 Installation
 
 ### Prérequis
+- R (version 4.0+)
+- Quarto CLI ([télécharger](https://quarto.org/docs/get-started/))
 
-- R (version 3.6+)
-- Quarto CLI ([télécharger ici](https://quarto.org/docs/get-started/))
-- Git
+### Packages R requis
+```r
+install.packages(c("plotrix", "RColorBrewer", "MASS"))
+```
 
 ### Générer le site
-
 ```bash
-# Installer Quarto depuis https://quarto.org/docs/get-started/
-
-# Générer le site web
 quarto render
-
-# Le site sera généré dans le dossier 'docs/'
 ```
 
-### Publier sur GitHub Pages
-
-1. **Créer un dépôt GitHub** pour ce projet
-
-2. **Pousser le code**
+### Prévisualiser
 ```bash
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/VOTRE_USERNAME/projet-ilots-fraicheur.git
-git push -u origin main
+quarto preview
 ```
-
-3. **Configurer GitHub Pages**
-   - Aller dans `Settings` > `Pages`
-   - Source: `Deploy from a branch`
-   - Branch: `main` / Folder: `/docs`
-   - Cliquer sur `Save`
-
-4. **Accéder au site**
-   - URL: `https://VOTRE_USERNAME.github.io/projet-ilots-fraicheur/`
 
 ## 📁 Structure du projet
 
 ```
-projet_ilots_fraicheur/
-├── index.qmd                    # Page d'accueil
-├── analyse.qmd                  # Analyses statistiques
-├── visualisations.qmd           # Cartes et graphiques
-├── _quarto.yml                  # Configuration Quarto
-├── styles.css                   # Styles personnalisés
-├── .nojekyll                    # Pour GitHub Pages
+analyse-ilots-fraicheur-paris/
+├── 📄 index.qmd              # Page d'accueil
+├── 📄 analyse.qmd            # Statistiques descriptives
+├── 📄 visualisations.qmd     # Cartes et graphiques
+├── ⚙️ _quarto.yml            # Configuration Quarto
+├── 🎨 styles.css             # Styles personnalisés
+├── 📚 COMPREHENSION.md       # Guide complet du projet
 ├── scripts/
-│   ├── 01_analyse_principale.R  # Script d'analyse de base
-│   └── 02_analyse_avancee.R     # Script d'analyse avancée
-├── outputs/                     # Graphiques et données
-└── docs/                        # Site web généré (auto)
+│   ├── 01_analyse_principale.R
+│   └── 02_analyse_avancee.R
+├── outputs/                  # Graphiques générés (.png, .csv)
+└── docs/                     # Site web généré
 ```
 
-## 📊 Données
+## 📊 Visualisations générées
 
-Source : [Open Data Paris](https://opendata.paris.fr/explore/dataset/ilots-de-fraicheur-equipements-activites/)
-
-- **548 îlots** recensés
-- **19 variables** (coordonnées GPS, type, accès, horaires...)
-- **20 arrondissements** couverts
+| Graphique | Description |
+|-----------|-------------|
+| 🗺️ Carte des îlots | Position GPS de chaque îlot |
+| 🌡️ Carte de densité | Zones de concentration |
+| 📊 Barplots | Répartition par type/arrondissement |
+| 🕸️ Radar | Distribution des types |
+| 🫧 Bulles | Croisement arrondissement × type |
+| 🥧 Camembert 3D | Top 10 des types |
 
 ## 🛠️ Technologies
 
-- **R** : Analyse statistique et visualisations
-- **Quarto** : Publication scientifique et web
-- **Plotrix** : Graphiques avancés (radar, 3D, bulles)
-- **RColorBrewer** : Palettes de couleurs
-- **GitHub Pages** : Hébergement gratuit
+| Outil | Usage |
+|-------|-------|
+| **R** | Analyse statistique |
+| **Quarto** | Publication web |
+| **plotrix** | Graphiques avancés |
+| **RColorBrewer** | Palettes de couleurs |
+| **GitHub Pages** | Hébergement |
 
-## 📝 Auteur
+## 📦 Source des données
 
-**Naima Rejeb** - Data Science & AI G1
+[Open Data Paris - Îlots de fraîcheur](https://opendata.paris.fr/explore/dataset/ilots-de-fraicheur-equipements-activites/)
+
+## 👩‍💻 Auteur
+
+**Naima Rejeb**  
+Data Science & AI G1 - 2025/2026
 
 ## 📄 Licence
 
-Ce projet est sous licence open source. Les données proviennent de Paris Open Data.
+Données : [Licence Ouverte / Open Licence](https://www.etalab.gouv.fr/licence-ouverte-open-licence)
 
 ---
+
+⭐ *Projet réalisé avec R et Quarto*
 
 🌟 **N'oubliez pas de mettre une étoile si ce projet vous a été utile !**
