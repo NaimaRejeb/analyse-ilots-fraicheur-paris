@@ -2,7 +2,7 @@
 title: "Analyse des Îlots de Fraîcheur à Paris"
 subtitle: "Projet R - Data Science & AI G1"
 author: "Naima Rejeb"
-date: "`r Sys.Date()`"
+date: "2026-01-07"
 format:
   html:
     theme: cosmo
